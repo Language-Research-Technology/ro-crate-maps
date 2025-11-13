@@ -142,11 +142,20 @@ Build a specific profile:
 ```bash
 npm run build:workflow-profile
 ```
+> 
+
 
 Build all profiles (if you want to build multiple):
 ```bash
-npm run build:ldac-profile && npm run build:ro-crate-profile && npm run build:generic-profile
+> npm run build:ldac-profile && npm run build:ro-crate-profile && npm run build:generic-profile
+
+
+Reading template from: profiles/workflow/profile-text.md
+Documentation generated successfully: profiles/workflow/profile-crate/profile-documentation.md
 ```
+
+See the result of this profile generation [here](./profiles/workflow/profile-crate/profile-documentation.md) this is the result of combining [the profile crate document](./profiles/workflow/profile-crate/ro-crate-metadata.json) with a [document](./profiles/workflow/profile-text.md).
+
 
 Each build command runs the `generate-soss-docs.js` script with three arguments:
 1. Path to the ro-crate-metadata.json file

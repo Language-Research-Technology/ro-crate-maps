@@ -11,7 +11,9 @@
     "build:danala-schema": "node generate-soss-docs.js schemas/danala-schema/schema-crate/ro-crate-metadata.json schemas/danala-schema/schema-text.md schemas/danala-schema/schema-crate/schema-documentation.md",
     "build:workflow-profile": "node generate-soss-docs.js profiles/workflow/profile-crate/ro-crate-metadata.json profiles/workflow/profile-text.md profiles/workflow/profile-crate/profile-documentation.md",
     "build:soa-profile": "node generate-soss-docs.js profiles/soa/profile-crate/ro-crate-metadata.json profiles/soa/profile-text.md profiles/soa/profile-crate/profile-documentation.md",
-    "build:austalk-schema": "node generate-soss-docs.js profiles/austalk/schema-crate/ro-crate-metadata.json profiles/austalk/schema-text.md profiles/austalk/schema-crate/schema-documentation.md"
+  "build:austalk-schema": "node generate-soss-docs.js profiles/austalk/schema-crate/ro-crate-metadata.json profiles/austalk/schema-text.md profiles/austalk/schema-crate/schema-documentation.md",
+  "validate:workflow": "node validate-crate.js profiles/workflow/examples/minimal-example/ro-crate-metadata.json profiles/workflow/profile-crate/ro-crate-metadata.json",
+  "validate:workflow:json": "node validate-crate.js --json profiles/workflow/examples/minimal-example/ro-crate-metadata.json profiles/workflow/profile-crate/ro-crate-metadata.json"
   },
   "repository": {
     "type": "git",

@@ -128,13 +128,61 @@ TODO - update existing proof of concept -- yes we can do this but it needs updat
 
 We would love to see alternative implementations of this proof of concept code. Particularly other approaches to validation -- can ROC-MAPS schemas and classes be transformed into SCHACL? 
 
+## Architecture of the solution
+
+The core of this proposed ROC-MAP solution is to use RO-Crates to package Profiles (or Schemas -- which can be authored in the same way but which would typically be more permissive).
+
+This ROC-MAP Crate can be used in combination with textual summary of the Profile to create documentation with an automatically generated summary of what should be in conformant crates.
+
+<!--
+@startuml
+
+package "Machine Actionable Profile Crate" as mapc {
+rectangle "ro-crate-metadata.json" as rcd
+rectangle "Profile summary document" as psd
+}
+
+rectangle "Human-readable text description of profile (profile.txt)" as pt
+
+rectangle "Doc generation script"  as dgs
+
+dgs <-up- rcd : Use rules
+dgs <-up- pt : Use text
+dgs -up-> psd : Generate Documentation
+
+
+@enduml
+-->
+
+![alt text](image.png)
+
+To run this, choose one of the examples from the implementations section below. Eg to generate the documentation for the RO-Crate Workflow profile example, run:
+
+```javascript
+npm run build:workflow-profile
+```
+
+Or to validate a workflow crate: 
+```
+npm run validate:workflow
+```
+
+To get the full validation report (which is a work in progress):
+
+```
+npm run validate:workflow:json
+```
+
+NOTE: At the moment these scripts are passing in the profile to validate against. TOTO: In future the code will support fetching or matching local copies of profiles by IRI on a conformsTo property.
+
 
 ## Draft ROC-MAP Implementations
 
-The following RO-Crate Machine Actionable Profiles and Schemas are avaialable to try:
+The following RO-Crate Machine Actionable Profiles and Schemas are avaialable to try.
 
-## Workflow Crate Profile
-
+- Workflow Crate Profile
+  Generate docs: `npm run build:workflow-profile`
+  Run a validator: 
 
 ## TODO: (these are all partially implemented in the [SoSS+ Branch] 
 - ROC-MAPS for RO-Crate itself
@@ -176,3 +224,22 @@ Each build command runs the `generate-soss-docs.js` script with three arguments:
 1. Path to the ro-crate-metadata.json file
 2. Path to the profile/schema text markdown file
 3. Path to the output documentation markdown file
+
+
+## Validating RO-Crates from the Command Line
+
+You can validate a target RO-Crate against a profile crate using the command-line tool `validate-crate.js`.
+
+### Usage
+
+```bash
+node validate-crate.js <target-crate.json> <profile-crate.json>
+```
+
+For example, to validate the minimal workflow crate against the workflow profile:
+
+```bash
+node validate-crate.js profiles/workflow/examples/minimal-example/ro-crate-metadata.json profiles/workflow/profile-crate/ro-crate-metadata.json
+```
+
+The tool will print validation results to the console and exit with a nonzero code if errors are found.

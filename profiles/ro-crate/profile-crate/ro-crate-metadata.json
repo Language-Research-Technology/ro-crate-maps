@@ -1,0 +1,184 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "RO-Crate Machine Actionable Profile",
+      "description": "This is a mini-profile for RO-Crate itself",
+      "author": {
+        "@id": "#author"
+      },
+      "license": "GPL-3.0",
+      "conformsTo": {
+        "@id": "https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/sossplus-profile.md"
+      },
+      "hasResource": 
+        {
+          "@id": "#hasSpecializedSchema"
+        }
+    },
+     { 
+      "@id": "#hasSpecializedSchema",
+      "@type": "ResourceDescriptor",
+      "name": "Specialized Schema Terms",
+      "hasRole": { "@id": "http://www.w3.org/ns/dx/prof/role/schema" },
+      "hasPart": 
+      [
+        { "@id": "#RO-Crate_Metadata_Descriptor" },
+        { "@id": "#RO-Crate_Metadata_Descriptor.id" },
+        { "@id": "#RO-Crate_Metadata_Descriptor.about" },
+        { "@id": "#Root_Data_Entity" },
+        { "@id": "http://schema.org/name" },
+        { "@id": "#prop_description_Dataset" },
+        { "@id": "#prop_datePublised_Dataset" },
+        { "@id": "#prop_license_Dataset" }
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "#author",
+      "@type": "Organization",
+      "name": "University of Queensland"
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor",
+      "@type": "rdfs:Class",
+      "name": "RO-Crate Metadadata Descriptor",
+      "prov:specializationOf": { "@id": "http://schema.org/CreativeWork" },
+      "Description": "An RO-Crate @graph must contain an entity of Type @CreativeWork which is known as the RO-Crate Metadata descriptor.",
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+        "@id": "#RO-Crate_Metadata_Descriptor.id",
+        "@type": "rdf:Property",
+        "value": "ro-crate-metadata.json",
+        "description": "The RO-Crate Metadata ",
+        "rdfs:label": "@id",
+        "domainIncludes": [
+          {
+            "@id": "#RO-Crate_Metadata_Descriptor"
+          }
+        ],
+        "sh:minCount": 1,
+        "sh:maxCount": 1
+   },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor.about",
+      "@type": "rdf:Property",
+      "prov:specializationOf": { "@id": "http://schema.org/about" },
+      "description": "This property on the RO-Crate Metadata Descriptor references the Root Data Entity. I a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Enitty with different @type arrays or `@conformsTo` references (or other specializations). In this example there is a single reference.",
+      "name": "about",
+      "domainIncludes": [
+        {
+          "@id": "#RO-Crate_Metadata_Descriptor"
+        }
+      ],
+      "rangeIncludes": { "@id": "#Root_Data_Entity" },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#Root_Data_Entity",
+      "@type": "rdfs:Class",
+      "prov:specializationOf": { "@id": "http://schema.org/Dataset" },
+      "description": "The Root Data Entity for an RO-Crate. This is the main entity of the RO-Crate and is the one that is referenced by the RO-Crate Metadata Descriptor.",
+      "name": "Root Data Entity",
+      "sh:minCount": 0,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "http://schema.org/name",
+      "@type": "rdf:Property",
+      "rdfs:label": "name",
+      "name": "name",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/name"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates",
+      "rangeIncludes": {
+        "@id": "Text"
+      },
+      "sh:minCount": 1
+    },
+   
+    {
+      "@id": "#prop_description_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "description",
+      "name": "description",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/description"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "(In addition to the name) SHOULD further elaborate on the name to provide a summary of the context in which the dataset is important.",
+      "rangeIncludes": {
+        "@id": "Text"
+      },
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#prop_datePublised_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "datePublished",
+      "name": "datePublished",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/datePubished"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "MUST be a string in ISO 8601 date format and SHOULD be specified to at least the precision of a day, MAY be a timestamp down to the millisecond.",
+      "rangeIncludes": [
+        {
+          "@id": "schema:Date"
+        }
+      ],
+      "sh:minCount": 1
+    },
+
+    {
+      "@id": "#prop_license_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "license",
+      "name": "license",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/license"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "SHOULD link to a Contextual Entity in the RO-Crate Metadata File with a name and description. MAY have a URI (eg for Creative Commons or Open Source licenses). MAY if necessary be a textual description of how the RO-Crate may be used",
+      "rangeIncludes": [
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:Text"
+        }
+      ],
+      "sh:minCount": 1
+    }
+  ]
+}

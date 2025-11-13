@@ -1,0 +1,33 @@
+{
+  "name": "ro-crate-maps",
+  "version": "1.0.0",
+  "description": "RO-Crate Machine Actionable Profiles and Schemas tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build:ldac-profile": "node generate-soss-docs.js profiles/ldac/profile-crate/ro-crate-metadata.json profiles/ldac/profile-text.md profiles/ldac/profile-crate/profile-documentation.md",
+    "build:ro-crate-profile": "node generate-soss-docs.js profiles/ro-crate/profile-crate/ro-crate-metadata.json profiles/ro-crate/profile-text.md profiles/ro-crate/profile-crate/profile-documentation.md",
+    "build:generic-profile": "node generate-soss-docs.js profiles/generic-collection/profile-crate/ro-crate-metadata.json profiles/generic-collection/profile-text.md profiles/generic-collection/profile-crate/profile-documentation.md",
+    "build:danala-schema": "node generate-soss-docs.js schemas/danala-schema/schema-crate/ro-crate-metadata.json schemas/danala-schema/schema-text.md schemas/danala-schema/schema-crate/schema-documentation.md",
+    "build:workflow-profile": "node generate-soss-docs.js profiles/workflow/profile-crate/ro-crate-metadata.json profiles/workflow/profile-text.md profiles/workflow/profile-crate/profile-documentation.md",
+    "build:soa-profile": "node generate-soss-docs.js profiles/soa/profile-crate/ro-crate-metadata.json profiles/soa/profile-text.md profiles/soa/profile-crate/profile-documentation.md",
+    "build:austalk-schema": "node generate-soss-docs.js profiles/austalk/schema-crate/ro-crate-metadata.json profiles/austalk/schema-text.md profiles/austalk/schema-crate/schema-documentation.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Language-Research-Technology/ro-crate-maps.git"
+  },
+  "author": "ptsefton",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Language-Research-Technology/ro-crate-maps/issues"
+  },
+  "homepage": "https://github.com/Language-Research-Technology/ro-crate-maps#readme",
+  "dependencies": {
+    "ro-crate": "^3.6.1"
+  },
+  "devDependencies": {
+    "chai": "^6.2.1",
+    "mocha": "^11.7.5"
+  }
+}

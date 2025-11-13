@@ -1,0 +1,462 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Schema profile  Schema",
+      "description": "Schema derived from Schema profile : Crate-O Mode for creating Schema.org Style Schema (SOSS) vocabularies.",
+      "author": {
+        "@id": "#author"
+      },
+      "license": "GPL-3.0",
+      "conformsTo": {
+        "@id": "https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/sossplus-profile.md"
+      }
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "#author",
+      "@type": "Organization",
+      "name": "University of Queensland"
+    },
+    {
+      "@id": "#class_Dataset",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Dataset",
+      "name": "Dataset",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/Dataset"
+      }
+    },
+    {
+      "@id": "#prop_mentions_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "mentions",
+      "name": "mentions",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/mentions"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The Classes, Properties etc.",
+      "schema:rangeIncludes": [
+        {
+          "@id": "#class_rdfs:Class"
+        },
+        {
+          "@id": "#class_rdf:Property"
+        },
+        {
+          "@id": "#class_DefinedTerm"
+        },
+        {
+          "@id": "#class_DefinedTermSet"
+        }
+      ]
+    },
+    {
+      "@id": "#class_rdfs:Class",
+      "@type": "rdfs:Class",
+      "rdfs:label": "rdfs:Class",
+      "name": "rdfs:Class",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/rdfs:Class"
+      }
+    },
+    {
+      "@id": "#class_rdf:Property",
+      "@type": "rdfs:Class",
+      "rdfs:label": "rdf:Property",
+      "name": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/rdf:Property"
+      }
+    },
+    {
+      "@id": "#class_DefinedTerm",
+      "@type": "rdfs:Class",
+      "rdfs:label": "DefinedTerm",
+      "name": "DefinedTerm",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/DefinedTerm"
+      }
+    },
+    {
+      "@id": "#class_DefinedTermSet",
+      "@type": "rdfs:Class",
+      "rdfs:label": "DefinedTermSet",
+      "name": "DefinedTermSet",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/DefinedTermSet"
+      }
+    },
+    {
+      "@id": "#prop_name_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "name",
+      "name": "name",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/name"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The name of this Schema.",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_author_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "author",
+      "name": "author",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/author"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The person or organization responsible for creating this collection of data.",
+      "schema:rangeIncludes": [
+        {
+          "@id": "#class_Person"
+        },
+        {
+          "@id": "#class_Organization"
+        }
+      ]
+    },
+    {
+      "@id": "#class_Person",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Person",
+      "name": "Person",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/Person"
+      }
+    },
+    {
+      "@id": "#class_Organization",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Organization",
+      "name": "Organization",
+      "prov:specializationOf": {
+        "@id": "https://schema.org/Organization"
+      }
+    },
+    {
+      "@id": "#prop_publisher_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "publisher",
+      "name": "publisher",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/publisher"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "The organization responsible for releasing this collection of data.",
+      "schema:rangeIncludes": {
+        "@id": "#class_Organization"
+      }
+    },
+    {
+      "@id": "#prop_description_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "description",
+      "name": "description",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/description"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "An abstract of the collection. Include as much detail as possible about the motivation and use of the collection, including things that we do not yet have properties for.",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_license_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "license",
+      "name": "license",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/license"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Dataset"
+      },
+      "rdfs:comment": "A license document that applies to this content, typically indicated by URL.",
+      "schema:rangeIncludes": [
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ],
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#prop_rdfs:label_rdfs:Class",
+      "@type": "rdf:Property",
+      "rdfs:label": "rdfs:label",
+      "name": "rdfs:label",
+      "prov:specializationOf": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdfs:Class"
+      },
+      "rdfs:comment": "The label for this class.",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_rdfs:comment_rdfs:Class",
+      "@type": "rdf:Property",
+      "rdfs:label": "rdfs:comment",
+      "name": "rdfs:comment",
+      "prov:specializationOf": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdfs:Class"
+      },
+      "rdfs:comment": "A description of the Class.",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_rdfs:subClassOf_rdfs:Class",
+      "@type": "rdf:Property",
+      "rdfs:label": "rdfs:subClassOf",
+      "name": "rdfs:subClassOf",
+      "prov:specializationOf": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdfs:Class"
+      },
+      "rdfs:comment": "Parent Class (if any).",
+      "schema:rangeIncludes": {
+        "@id": "#class_Class"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_sameAs_rdfs:Class",
+      "@type": "rdf:Property",
+      "rdfs:label": "sameAs",
+      "name": "sameAs",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/sameAs"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdfs:Class"
+      },
+      "rdfs:comment": "URL of an equivalent term.",
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_inDefinedTermSet_DefinedTerm",
+      "@type": "rdf:Property",
+      "rdfs:label": "inDefinedTermSet",
+      "name": "inDefinedTermSet",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/inDefinedTermSet"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_DefinedTerm"
+      },
+      "rdfs:comment": "A set of defined terms that can be used for the range of values of a property.",
+      "schema:rangeIncludes": {
+        "@id": "#class_DefinedTermSet"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_hasDefinedTerm_DefinedTermSet",
+      "@type": "rdf:Property",
+      "rdfs:label": "hasDefinedTerm",
+      "name": "hasDefinedTerm",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/hasDefinedTerm"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_DefinedTermSet"
+      },
+      "rdfs:comment": "A set of defined terms that can be used for the range of values of a property.",
+      "schema:rangeIncludes": {
+        "@id": "#class_DefinedTerm"
+      }
+    },
+    {
+      "@id": "#prop_label_rdf:Property",
+      "@type": "rdf:Property",
+      "rdfs:label": "label",
+      "name": "label",
+      "prov:specializationOf": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdf:Property"
+      },
+      "rdfs:comment": "The label for this property.",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_Comment_rdf:Property",
+      "@type": "rdf:Property",
+      "rdfs:label": "Comment",
+      "name": "Comment",
+      "prov:specializationOf": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdf:Property"
+      },
+      "rdfs:comment": "A description of the Class.",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_subPropertyOf_rdf:Property",
+      "@type": "rdf:Property",
+      "rdfs:label": "subPropertyOf",
+      "name": "subPropertyOf",
+      "prov:specializationOf": {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdf:Property"
+      },
+      "rdfs:comment": "Is this a sub-type of a more general property.",
+      "schema:rangeIncludes": {
+        "@id": "#class_Class"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_domainIncludes_rdf:Property",
+      "@type": "rdf:Property",
+      "rdfs:label": "domainIncludes",
+      "name": "domainIncludes",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/domainIncludes"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdf:Property"
+      },
+      "rdfs:comment": "What clasess use this property (ie what domain does this property occur in).",
+      "schema:rangeIncludes": {
+        "@id": "#class_Class"
+      }
+    },
+    {
+      "@id": "#prop_DefinedTermSet_rdf:Property",
+      "@type": "rdf:Property",
+      "rdfs:label": "DefinedTermSet",
+      "name": "DefinedTermSet",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/DefinedTermSet"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdf:Property"
+      },
+      "rdfs:comment": "A set of defined terms that can be used for the range of values of this property.",
+      "schema:rangeIncludes": {
+        "@id": "#class_DefinedTermSet"
+      },
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_rangeIncludes_rdf:Property",
+      "@type": "rdf:Property",
+      "rdfs:label": "rangeIncludes",
+      "name": "rangeIncludes",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/rangeIncludes"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_rdf:Property"
+      },
+      "rdfs:comment": "What clasess are expected values for this range.",
+      "schema:rangeIncludes": [
+        {
+          "@id": "#class_Class"
+        },
+        {
+          "@id": "#class_DefinedTerm"
+        }
+      ],
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_affiliation_Person",
+      "@type": "rdf:Property",
+      "rdfs:label": "affiliation",
+      "name": "affiliation",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/affiliation"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Person"
+      },
+      "rdfs:comment": "The name the person.",
+      "schema:rangeIncludes": {
+        "@id": "#class_Organization"
+      }
+    },
+    {
+      "@id": "#prop_location_Organization",
+      "@type": "rdf:Property",
+      "rdfs:label": "location",
+      "name": "location",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/location"
+      },
+      "schema:domainIncludes": {
+        "@id": "#class_Organization"
+      },
+      "rdfs:comment": "A location for the organization (e.g. a city for a publisher).",
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "sh:maxCount": 1
+    }
+  ]
+}

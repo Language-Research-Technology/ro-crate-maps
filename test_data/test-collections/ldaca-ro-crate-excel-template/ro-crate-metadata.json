@@ -1,0 +1,370 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/",
+      "ldac": "https://w3id.org/ldac/terms#",
+      "csvw": "http://www.w3.org/ns/csvw#",
+      "custom": "arcp://name,custom/terms#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "RepositoryCollection"
+      ],
+      "name": "Example Collection",
+      "description": "This is an example collection.",
+      "ldac:doi": "https://doi.org/10.1000/182",
+      "datePublished": "2024-09-04",
+      "inLanguage": "English",
+      "ldac:subjectLanguage": "English",
+      "ldac:metadataIsPublic": "true",
+      "author": {
+        "@id": "#LDaCA"
+      },
+      "publisher": {
+        "@id": "https://ror.org/00rqy9422"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "pcdm:hasMember": [
+        {
+          "@id": "#ExampleCollection_Speaker_01"
+        },
+        {
+          "@id": "#ExampleCollection_Speaker_02"
+        }
+      ],
+      "hasPart": []
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "#LDaCA",
+      "@type": "Organization",
+      "name": "LDaCA"
+    },
+    {
+      "@id": "https://ror.org/00rqy9422",
+      "@type": "Organization",
+      "name": "University of Queensland"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": ["CreativeWork"],
+      "name": "Attribution 4.0 International (CC BY 4.0)",
+      "description": "You are free to: Share — copy and redistribute the material in any medium or format. Adapt — remix, transform, and build upon the material for any purpose, even commercially. This license is acceptable for Free Cultural Works. The licensor cannot revoke these freedoms as long as you follow the license terms.",
+      "ldac:allowTextIndex": "true",
+      "sameAs": {
+        "@id": "CC_BY_4.0.txt"
+      },
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "arcp://name,custom/terms#textType",
+      "@type": "rdf:Property",
+      "name": "Text Type",
+      "description": "The type of text.",
+      "rdfs:label": "Text Type",
+      "rdfs:comment": "The type of text."
+    },
+    {
+      "@id": "arcp://name,custom/terms#Speech",
+      "@type": "DefinedTerm",
+      "name": "Speech",
+      "description": "The type of text is a speech.",
+      "inDefinedTermSet": {
+        "@id": "arcp://name,custom/terms#TextTypeTerms"
+      }
+    },
+    {
+      "@id": "arcp://name,custom/terms#TextTypeTerms",
+      "@type": "DefinedTermSet",
+      "name": "Text Type Terms",
+      "description": "The set of expected values for text types."
+    },
+    {
+      "@id": "arcp://name,custom/terms#Interview",
+      "@type": "DefinedTerm",
+      "name": "Interview",
+      "description": "The type of text is an interview.",
+      "inDefinedTermSet": {
+        "@id": "arcp://name,custom/terms#TextTypeTerms"
+      }
+    },
+    {
+      "@id": "CC_BY_4.0.txt",
+      "@type": [
+        "ldac:DataReuseLicense",
+        "File"
+      ],
+      "name": "Attribution 4.0 International (CC BY 4.0) Local",
+      "description": "Local copy of the CC BY 4.0 license.",
+      "ldac:allowTextIndex": "true",
+      "sameAs": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by-nd/3.0/au/",
+      "@type": "ldac:DataReuseLicense",
+      "name": "Attribution-NoDerivs 3.0 Australia (CC BY-ND 3.0 AU)",
+      "description": "You are free to: Share — copy and redistribute the material in any medium or format for any purpose, even commercially. The licensor cannot revoke these freedoms as long as you follow the license terms.",
+      "ldac:allowTextIndex": "true",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "Licenses/Example.txt",
+      "@type": [
+        "ldac:DataReuseLicense",
+        "File"
+      ],
+      "name": "Example Custom License",
+      "description": "This license explains who is allowed to use and possibly redistribute this data, and for what purpose.",
+      "ldac:allowTextIndex": "true",
+      "isPartOf": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "#updatedData",
+      "@type": "CreateAction",
+      "name": "Created an XLSX version of data",
+      "description": "Original data was in XLS format, created an updated XLSX version.",
+      "object": {
+        "@id": "original-data.xls"
+      },
+      "result": {
+        "@id": "updated-data.xlsx"
+      },
+      "instrument": "Use Microsoft Excel",
+      "agent": {
+        "@id": "https://orcid.org/author-id"
+      }
+    },
+    {
+      "@id": "#Speaker_01",
+      "@type": "Person",
+      "name": "Speaker_01",
+      "gender": "Female",
+      "birthDate": "1979"
+    },
+    {
+      "@id": "#Speaker_02",
+      "@type": "Person",
+      "name": "Speaker_02",
+      "gender": "Male",
+      "birthDate": "1982"
+    },
+    {
+      "@id": "#Place-1",
+      "@type": "Place",
+      "name": "Naarm",
+      "description": "Traditional Place name of Melbourne.",
+      "geo": {
+        "@id": "#Location-1"
+      }
+    },
+    {
+      "@id": "#Location-1",
+      "@type": "Geometry",
+      "asWKT": "POINT(144.9 -37.8)"
+    },
+    {
+      "@id": "#Place-2",
+      "@type": "Place",
+      "name": "Meanjin",
+      "description": "Traditional Place name of Brisbane.",
+      "geo": {
+        "@id": "#Location-2"
+      }
+    },
+    {
+      "@id": "#Location-2",
+      "@type": "Geometry",
+      "asWKT": "POINT(153 -27.4)"
+    },
+    {
+      "@id": "#ExampleCollection_Speaker_01",
+      "@type": "RepositoryObject",
+      "name": "ExampleCollection_Speaker_01",
+      "description": "Anonymised interview of Speaker 01.",
+      "ldac:speaker": {
+        "@id": "#Speaker_01"
+      },
+      "datePublished": "2024-09-04",
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "license": {
+        "@id": "Licenses/Example.txt"
+      },
+      "ldac:indexableText": {
+        "@id": "CSV/ExampleCollection_Speaker_01.csv"
+      },
+      "contentLocation": {
+        "@id": "#Place-1"
+      },
+      "inLanguage": "English",
+      "ldac:subjectLanguage": "English",
+      "arcp://name,custom/terms#textType": {
+        "@id": "arcp://name,custom/terms#Interview"
+      }
+    },
+    {
+      "@id": "CSV/ExampleCollection_Speaker_01.csv",
+      "@type": [
+        "File",
+        "csvw:Table",
+        "Annotation"
+      ],
+      "isPartOf": {
+        "@id": "#ExampleCollection_Speaker_01"
+      },
+      "ldac:annotationOf": {
+        "@id": "Audio/ExampleCollection_Speaker_01.wav"
+      },
+      "csvw:tableSchema": {
+        "@id": "#interviewSchema"
+      }
+    },
+    {
+      "@id": "#ExampleCollection_Speaker_02",
+      "@type": "RepositoryObject",
+      "name": "ExampleCollection_Speaker_02",
+      "description": "Anonymised speech of Speaker 02.",
+      "ldac:speaker": {
+        "@id": "#Speaker_02"
+      },
+      "datePublished": "2024-09-05",
+      "pcdm:memberOf": {
+        "@id": "./"
+      },
+      "ldac:indexableText": {
+        "@id": "CSV/ExampleCollection_Speaker_02.csv"
+      },
+      "contentLocation": {
+        "@id": "#Place-2"
+      },
+      "inLanguage": "English",
+      "ldac:subjectLanguage": "English",
+      "arcp://name,custom/terms#textType": {
+        "@id": "arcp://name,custom/terms#Speech"
+      }
+    },
+    {
+      "@id": "CSV/ExampleCollection_Speaker_02.csv",
+      "@type": [
+        "File",
+        "ldac:Annotation"
+      ],
+      "isPartOf": {
+        "@id": "#ExampleCollection_Speaker_02"
+      },
+      "ldac:annotationOf": {
+        "@id": "Audio/ExampleCollection_Speaker_02.wav"
+      }
+    },
+    {
+      "@id": "Audio/ExampleCollection_Speaker_01.wav",
+      "@type": [
+        "File",
+        "ldac:PrimaryMaterial"
+      ],
+      "isPartOf": {
+        "@id": "#ExampleCollection_Speaker_01"
+      }
+    },
+    {
+      "@id": "Audio/ExampleCollection_Speaker_02.wav",
+      "@type": [
+        "File",
+        "ldac:PrimaryMaterial"
+      ],
+      "isPartOf": {
+        "@id": "#ExampleCollection_Speaker_02"
+      }
+    },
+    {
+      "@id": "#interviewSchema",
+      "@type": "csvw:Schema",
+      "name": "Description of the fields in the interview transcript CSV files.",
+      "conformsTo": {
+        "@id": "tabulatorMapping"
+      },
+      "csvw:columns": [
+        {
+          "@id": "#col_speakerID"
+        },
+        {
+          "@id": "#col_speakerName"
+        },
+        {
+          "@id": "#col_text"
+        }
+      ]
+    },
+    {
+      "@id": "Transcripts/ExampleCollection_Speaker_01.eaf",
+      "@type": [
+        "File",
+        "ldac:Annotation"
+      ],
+      "isPartOf": {
+        "@id": "#ExampleCollection_Speaker_01"
+      },
+      "ldac:annotationOf": {
+        "@id": "Audio/ExampleCollection_Speaker_01.wav"
+      }
+    },
+    {
+      "@id": "Transcripts/ExampleCollection_Speaker_02.eaf",
+      "@type": [
+        "File",
+        "ldac:Annotation"
+      ],
+      "isPartOf": {
+        "@id": "#ExampleCollection_Speaker_02"
+      },
+      "ldac:annotationOf": {
+        "@id": "Audio/ExampleCollection_Speaker_02.wav"
+      }
+    },
+    {
+      "@id": "#col_speakerID",
+      "@type": "csvw:Column",
+      "name": "speakerID",
+      "description": "ID of the speaker (a person).",
+      "csvw:propertyUrl": "rdf:@id"
+    },
+    {
+      "@id": "#col_speakerName",
+      "@type": "csvw:Column",
+      "name": "speakerName",
+      "description": "Name of the speaker (a person).",
+      "csvw:propertyUrl": "http://schema.org/name"
+    },
+    {
+      "@id": "#col_text",
+      "@type": "csvw:Column",
+      "name": "text",
+      "description": "The transcript text.",
+      "csvw:propertyUrl": "ldac:mainText"
+    }
+  ]
+}

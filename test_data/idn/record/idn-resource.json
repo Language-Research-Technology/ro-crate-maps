@@ -1,0 +1,170 @@
+[
+  {
+    "@id": "https://data.idnau.org/pid/AAC",
+    "@type": [
+      "http://www.w3.org/ns/dcat#Resource"
+    ],
+    "http://purl.org/dc/terms/accessRights": [
+      {
+        "@id": "https://linked.data.gov.au/def/data-access-rights/metadata-only"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This study contains time series of data of the Annual Aboriginal Census for Australia, Australian Capital Territory, New South Wales, Northern Territory, Queensland, South Australia, Tasmania, Victoria and Western Australia from 1921 to 1944.\r\n\r\nSpecial care notice:\r\nAboriginal and Torres Strait Islander people, researchers and other users should be aware that material in this dataset may contain material that is considered offensive. The data has been retained in its original format because it represents an evidential record of language, beliefs or other cultural situations at a point in time."
+      }
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#token",
+        "@value": "AAC"
+      },
+      {
+        "@type": "https://data.idnau.org/pid/adaId",
+        "@value": "au.edu.anu.ada.ddi.20002-aus"
+      }
+    ],
+    "http://purl.org/dc/terms/isPartOf": [
+      {
+        "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b5"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2011-07-22"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@value": "All Rights Reserved"
+      }
+    ],
+    "http://purl.org/dc/terms/rights": [
+      {
+        "@value": "Copyright © 2011, The Australian National University. All rights reserved."
+      }
+    ],
+    "http://purl.org/dc/terms/spatial": [
+      {
+        "@id": "https://linked.data.gov.au/dataset/asgsed3/AUS/AUS"
+      }
+    ],
+    "http://purl.org/dc/terms/temporal": [
+      {
+        "@value": "1921-1944"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Annual Aboriginal Census,1921-1944 - Australia"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "FAIR=4% (F-UJI)\r\nhttps://rdxx.org/notes.len/idc93/https%20__www.atsida.edu.au_archive_datasets_au.edu.anu.ada.ddi.20002-aus.json"
+      },
+      {
+        "@value": "See https://dev.rdxx.org/misc/aac-dale-chatwin/naa-links-20210622.xml\r\nThis is password protected"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#accessURL": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.20002-aus"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#theme": [
+      {
+        "@id": "https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedAttribution": [
+      {
+        "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b1"
+      },
+      {
+        "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b2"
+      },
+      {
+        "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b3"
+      },
+      {
+        "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b4"
+      }
+    ]
+  },
+  {
+    "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b1",
+    "http://www.w3.org/ns/dcat#hadRole": [
+      {
+        "@id": "http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/originator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "https://data.idnau.org/person/briscoe"
+      }
+    ]
+  },
+  {
+    "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b2",
+    "http://www.w3.org/ns/dcat#hadRole": [
+      {
+        "@id": "http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/originator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "https://orcid.org/0000-0002-5477-0874"
+      }
+    ]
+  },
+  {
+    "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b3",
+    "http://www.w3.org/ns/dcat#hadRole": [
+      {
+        "@id": "http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/rightsHolder"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "https://linked.data.gov.au/org/anu"
+      }
+    ]
+  },
+  {
+    "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b4",
+    "http://www.w3.org/ns/dcat#hadRole": [
+      {
+        "@id": "http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "https://data.idnau.org/pid/org/atsida"
+      }
+    ]
+  },
+  {
+    "@id": "_:na42d18c033c3474fa4b47d357ce5fb00b5",
+    "http://www.w3.org/ns/dcat#hadRole": [
+      {
+        "@id": "https://data.idnau.org/pid/vocab/cat-roles/home"
+      }
+    ],
+    "http://www.w3.org/ns/prov#entity": [
+      {
+        "@id": "https://www.atsida.edu.au"
+      }
+    ]
+  },
+  {
+    "@id": "https://data.idnau.org/pid/democat",
+    "http://purl.org/dc/terms/hasPart": [
+      {
+        "@id": "https://data.idnau.org/pid/AAC"
+      }
+    ]
+  }
+]

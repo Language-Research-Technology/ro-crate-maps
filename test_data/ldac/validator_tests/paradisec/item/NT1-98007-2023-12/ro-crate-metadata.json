@@ -1,0 +1,806 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2-DRAFT/context",
+  "@graph": [
+    {
+      "@id": "#place-Erakor village",
+      "@type": "Place",
+      "name": "Erakor village"
+    },
+    {
+      "@id": "#country-Vanuatu",
+      "@type": "Country",
+      "code": "VU",
+      "name": "Vanuatu"
+    },
+    {
+      "@id": "#geo-168.159,-17.83-168.594,-17.585",
+      "@type": "GeoShape",
+      "box": "168.159,-17.83 168.594,-17.585"
+    },
+    {
+      "@id": "#geo-166.427,-22.283-166.467,-22.241",
+      "@type": "GeoShape",
+      "box": "166.427,-22.283 166.467,-22.241"
+    },
+    {
+      "@id": "#geo-168.159,-17.83-168.594,-17.585",
+      "@type": "GeoShape",
+      "box": "168.159,-17.83 168.594,-17.585"
+    },
+    {
+      "@id": "#identifier_collectionIdentifier",
+      "@type": "PropertyValue",
+      "name": "collectionIdentifier",
+      "value": "NT1"
+    },
+    {
+      "@id": "#identifier_doi",
+      "@type": "PropertyValue",
+      "name": "doi",
+      "value": "10.4225/72/56F94A61DA9EC"
+    },
+    {
+      "@id": "#identifier_domain",
+      "@type": "PropertyValue",
+      "name": "domain",
+      "value": "paradisec.org.au"
+    },
+    {
+      "@id": "#identifier_hashId",
+      "@type": "PropertyValue",
+      "name": "hashId",
+      "value": "72b3dc1401c8ff06aacba0990a128fc113cf9ad5275f494b05c"
+    },
+    {
+      "@id": "#identifier_id",
+      "@type": "PropertyValue",
+      "name": "id",
+      "value": "NT1-98007"
+    },
+    {
+      "@id": "#identifier_itemIdentifier",
+      "@type": "PropertyValue",
+      "name": "itemIdentifier",
+      "value": "98007"
+    },
+    {
+      "@id": "#language-bis",
+      "@type": "Language",
+      "code": "bis",
+      "location": { "@id": "#geo-166.427,-22.283-166.467,-22.241" },
+      "name": "Bislama"
+    },
+    {
+      "@id": "#language-erk",
+      "@type": "Language",
+      "code": "erk",
+      "location": { "@id": "#geo-168.159,-17.83-168.594,-17.585" },
+      "name": "Efate, South"
+    },
+    {
+      "@id": "#place_geo-168.217,-17.8235-168.317,-17.7235",
+      "@type": "Place",
+      "geo": { "@id": "#geo-168.217,-17.8235-168.317,-17.7235" }
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": ["Dataset", "RepositoryObject"],
+      "additionalType": "item",
+      "contentLocation": [
+        { "@id": "#place-Erakor village" },
+        { "@id": "#place_geo-168.217,-17.8235-168.317,-17.7235" }
+      ],
+      "contributor": [
+        { "@id": "http://nla.gov.au/nla.party-479603" },
+        { "@id": "http://nla.gov.au/nla.party-479603" },
+        { "@id": "#person-1607" },
+        { "@id": "#person-1608" },
+        { "@id": "#person-1614" },
+        { "@id": "#person-1623" }
+      ],
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2022-10-25T09:02:17.000Z",
+      "description": "NT1-98007. Text #047 (speaker is John Maklen. Text title: History of villages before Erakor); Text #048 (speaker is John Maklen. Text title: Mantu the flying fox and Erromango); Text #049. Text title: Asaraf (speaker is John Maklen);Text #050. Text title: Mumu and Kotkot (speaker is John Maklen); Text #051. Text title: Natopu ni Erakor—the spirit who lives at Erakor (speaker is John Maklen);Text #038. Text title: The need for respect (speaker is Iokopeth) Stories can be seen at NT8-TEXT. There are time-aligned transcripts of this item and handwritten transcripts by Manuel Wayane scanned as jpg files. ",
+      "hasPart": [
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-001.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-002.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-003.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-004.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-005.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-006.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-007.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-008.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-009.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-010.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-011.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-012.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-013.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-014.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-015.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-016.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-017.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-018.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-019.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-020.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-021.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-022.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-023.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-024.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-025.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-026.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-027.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-028.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-029.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-030.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-031.jpg"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.eaf"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.ixt"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.mp3"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.wav"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007B.eaf"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007B.mp3"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007B.wav"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-A.tab"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-A.xml"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-B.tab"
+        },
+        {
+          "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-B.xml"
+        }
+      ],
+      "identifier": [
+        { "@id": "#identifier_domain" },
+        { "@id": "#identifier_id" },
+        { "@id": "#identifier_hashId" },
+        { "@id": "#identifier_itemId" },
+        { "@id": "#identifier_collectionId" },
+        { "@id": "#identifier_doi" }
+      ],
+      "license": { "@id": "#license-1" },
+      "memberOf": { "@id": "https://catalog.paradisec.org.au/repository/NT1" },
+      "name": "Recordings in South Efate: Kalsarap Namaf, Yokopet Ngui, John Maklen, Waia Tenene",
+      "publisher": { "@id": "http://nla.gov.au/nla.party-479603" },
+      "bornDigital": false,
+      "contentLanguages": [
+        { "@id": "#language-bis" },
+        { "@id": "#language-erk" }
+      ],
+      "countries": [{ "@id": "#country-Vanuatu" }],
+      "digitisedOn": "2001-01-01T00:00:00.000+11:00",
+      "external": false,
+      "languageAsGiven": "Nafsan",
+      "metadataExportable": true,
+      "originalMedia": "audiocassette",
+      "originatedOn": "1998-10-03",
+      "private": false,
+      "subjectLanguages": [{ "@id": "#language-erk" }],
+      "tapesReturned": false
+    },
+    {
+      "@id": "http://nla.gov.au/nla.party-479603",
+      "@type": "Person",
+      "email": "thien@unimelb.edu.au",
+      "familyName": "Thieberger",
+      "givenName": "Nick",
+      "name": "Nick Thieberger",
+      "role": [
+        { "@id": "#role-depositor" },
+        { "@id": "#role-recorder" },
+        { "@id": "#role-collector" }
+      ]
+    },
+    {
+      "@id": "#person-1607",
+      "@type": "Person",
+      "familyName": "Namaf",
+      "givenName": "Kalsarap",
+      "name": "Kalsarap Namaf",
+      "role": [{ "@id": "#role-speaker" }]
+    },
+    {
+      "@id": "#person-1608",
+      "@type": "Person",
+      "familyName": "Ngui",
+      "givenName": "Yokopet",
+      "name": "Yokopet Ngui",
+      "role": [{ "@id": "#role-speaker" }]
+    },
+    {
+      "@id": "#person-1614",
+      "@type": "Person",
+      "familyName": "Maklen",
+      "givenName": "John",
+      "name": "John Maklen",
+      "role": [{ "@id": "#role-speaker" }]
+    },
+    {
+      "@id": "#person-1623",
+      "@type": "Person",
+      "familyName": "Tenene",
+      "givenName": "Waia",
+      "name": "Waia Tenene",
+      "role": [{ "@id": "#role-speaker" }]
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-001.jpg",
+      "@type": "File",
+      "contentSize": 1658368,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:01:31.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-001.jpg",
+      "doi": "10.4225/72/575C8A369D680",
+      "essenceId": 1010709
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-002.jpg",
+      "@type": "File",
+      "contentSize": 1816576,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:01:37.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-002.jpg",
+      "doi": "10.4225/72/575C8A3C15C98",
+      "essenceId": 1010710
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-003.jpg",
+      "@type": "File",
+      "contentSize": 1811968,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:01:43.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-003.jpg",
+      "doi": "10.4225/72/575C8A41DD973",
+      "essenceId": 1010711
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-004.jpg",
+      "@type": "File",
+      "contentSize": 1827840,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:01:48.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-004.jpg",
+      "doi": "10.4225/72/575C8A4767685",
+      "essenceId": 1010712
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-005.jpg",
+      "@type": "File",
+      "contentSize": 1853440,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:01:54.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-005.jpg",
+      "doi": "10.4225/72/575C8A4CD8971",
+      "essenceId": 1010713
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-006.jpg",
+      "@type": "File",
+      "contentSize": 1796608,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:01:59.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-006.jpg",
+      "doi": "10.4225/72/575C8A525C618",
+      "essenceId": 1010714
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-007.jpg",
+      "@type": "File",
+      "contentSize": 1780224,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:05.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-007.jpg",
+      "doi": "10.4225/72/575C8A5810189",
+      "essenceId": 1010715
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-008.jpg",
+      "@type": "File",
+      "contentSize": 1737728,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:11.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-008.jpg",
+      "doi": "10.4225/72/575C8A5DB1113",
+      "essenceId": 1010716
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-009.jpg",
+      "@type": "File",
+      "contentSize": 1781760,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:16.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-009.jpg",
+      "doi": "10.4225/72/575C8A63479C1",
+      "essenceId": 1010717
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-010.jpg",
+      "@type": "File",
+      "contentSize": 1797632,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:22.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-010.jpg",
+      "doi": "10.4225/72/575C8A68B23D2",
+      "essenceId": 1010718
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-011.jpg",
+      "@type": "File",
+      "contentSize": 1800704,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:28.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-011.jpg",
+      "doi": "10.4225/72/575C8A6E73D01",
+      "essenceId": 1010719
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-012.jpg",
+      "@type": "File",
+      "contentSize": 1822720,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:33.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-012.jpg",
+      "doi": "10.4225/72/575C8A742DE00",
+      "essenceId": 1010720
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-013.jpg",
+      "@type": "File",
+      "contentSize": 1809920,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:39.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-013.jpg",
+      "doi": "10.4225/72/575C8A79B1B0F",
+      "essenceId": 1010721
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-014.jpg",
+      "@type": "File",
+      "contentSize": 1821696,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:44.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-014.jpg",
+      "doi": "10.4225/72/575C8A7F3F253",
+      "essenceId": 1010722
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-015.jpg",
+      "@type": "File",
+      "contentSize": 1626624,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:50.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-015.jpg",
+      "doi": "10.4225/72/575C8A84C0022",
+      "essenceId": 1010723
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-016.jpg",
+      "@type": "File",
+      "contentSize": 1633792,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:02:56.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-016.jpg",
+      "doi": "10.4225/72/575C8A8A9A944",
+      "essenceId": 1010724
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-017.jpg",
+      "@type": "File",
+      "contentSize": 1870336,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:01.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-017.jpg",
+      "doi": "10.4225/72/575C8A90506E6",
+      "essenceId": 1010725
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-018.jpg",
+      "@type": "File",
+      "contentSize": 1858560,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:07.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-018.jpg",
+      "doi": "10.4225/72/575C8A95DF462",
+      "essenceId": 1010726
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-019.jpg",
+      "@type": "File",
+      "contentSize": 1852416,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:12.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-019.jpg",
+      "doi": "10.4225/72/575C8A9B56F2F",
+      "essenceId": 1010727
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-020.jpg",
+      "@type": "File",
+      "contentSize": 1838080,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:18.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-020.jpg",
+      "doi": "10.4225/72/575C8AA0F09B8",
+      "essenceId": 1010728
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-021.jpg",
+      "@type": "File",
+      "contentSize": 1861120,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:24.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-021.jpg",
+      "doi": "10.4225/72/575C8AA6B23AF",
+      "essenceId": 1010729
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-022.jpg",
+      "@type": "File",
+      "contentSize": 1835008,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:29.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-022.jpg",
+      "doi": "10.4225/72/575C8AAC3A545",
+      "essenceId": 1010730
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-023.jpg",
+      "@type": "File",
+      "contentSize": 1827328,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:35.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-023.jpg",
+      "doi": "10.4225/72/575C8AB1C991E",
+      "essenceId": 1010731
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-024.jpg",
+      "@type": "File",
+      "contentSize": 1805312,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:40.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-024.jpg",
+      "doi": "10.4225/72/575C8AB74847D",
+      "essenceId": 1010732
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-025.jpg",
+      "@type": "File",
+      "contentSize": 1912832,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:46.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-025.jpg",
+      "doi": "10.4225/72/575C8ABCD2B44",
+      "essenceId": 1010733
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-026.jpg",
+      "@type": "File",
+      "contentSize": 1889792,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:51.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-026.jpg",
+      "doi": "10.4225/72/575C8AC26D69E",
+      "essenceId": 1010734
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-027.jpg",
+      "@type": "File",
+      "contentSize": 1878528,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:03:57.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-027.jpg",
+      "doi": "10.4225/72/575C8AC7F3886",
+      "essenceId": 1010735
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-028.jpg",
+      "@type": "File",
+      "contentSize": 1868288,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:04:02.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-028.jpg",
+      "doi": "10.4225/72/575C8ACD72196",
+      "essenceId": 1010736
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-029.jpg",
+      "@type": "File",
+      "contentSize": 1859584,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:04:08.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-029.jpg",
+      "doi": "10.4225/72/575C8AD2E8E82",
+      "essenceId": 1010737
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-030.jpg",
+      "@type": "File",
+      "contentSize": 1859072,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:04:13.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-030.jpg",
+      "doi": "10.4225/72/575C8AD8775E6",
+      "essenceId": 1010738
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-031.jpg",
+      "@type": "File",
+      "contentSize": 1708544,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:04:19.000Z",
+      "encodingFormat": "image/jpeg",
+      "name": "NT1-98007-031.jpg",
+      "doi": "10.4225/72/575C8ADDE64B8",
+      "essenceId": 1010739
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.eaf",
+      "@type": "File",
+      "contentSize": 165674,
+      "dateCreated": "2016-08-01T05:00:06.000Z",
+      "dateModified": "2016-08-01T16:01:41.000Z",
+      "encodingFormat": "application/xml",
+      "name": "NT1-98007-98007A.eaf",
+      "doi": "10.4225/72/579F725FDD059",
+      "essenceId": 1100487
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.ixt",
+      "@type": "File",
+      "contentSize": 40299,
+      "dateCreated": "2016-04-18T07:00:07.000Z",
+      "dateModified": "2016-06-24T08:25:06.000Z",
+      "encodingFormat": "application/xml",
+      "name": "NT1-98007-98007A.ixt",
+      "doi": "10.4225/72/576CEE5CED1FB",
+      "essenceId": 1085095
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.mp3",
+      "@type": "File",
+      "bitrate": 128009,
+      "contentSize": 43667584,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2019-11-29T09:17:34.000Z",
+      "duration": 2729.02,
+      "encodingFormat": "audio/mpeg",
+      "name": "NT1-98007-98007A.mp3",
+      "channels": 2,
+      "doi": "10.4225/72/575C8AE370B93",
+      "essenceId": 1010740,
+      "sampleRate": 44100
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007A.wav",
+      "@type": "File",
+      "bitrate": 4608000,
+      "contentSize": 1571894006,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2019-11-29T09:16:52.000Z",
+      "duration": 2728.98,
+      "encodingFormat": "audio/x-wav",
+      "name": "NT1-98007-98007A.wav",
+      "channels": 2,
+      "doi": "10.4225/72/575C8AE8E6E6B",
+      "essenceId": 1010741,
+      "sampleRate": 96000
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007B.eaf",
+      "@type": "File",
+      "contentSize": 118748,
+      "dateCreated": "2016-08-01T05:00:07.000Z",
+      "dateModified": "2016-08-01T16:01:47.000Z",
+      "encodingFormat": "application/xml",
+      "name": "NT1-98007-98007B.eaf",
+      "doi": "10.4225/72/579F7265746C0",
+      "essenceId": 1100493
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007B.mp3",
+      "@type": "File",
+      "bitrate": 128007,
+      "contentSize": 35305600,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2019-11-29T09:12:58.000Z",
+      "duration": 2206.47,
+      "encodingFormat": "audio/mpeg",
+      "name": "NT1-98007-98007B.mp3",
+      "channels": 2,
+      "doi": "10.4225/72/575C8AEE64BCA",
+      "essenceId": 1010742,
+      "sampleRate": 44100
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-98007B.wav",
+      "@type": "File",
+      "bitrate": 4608000,
+      "contentSize": 1270917002,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2019-11-29T09:15:22.000Z",
+      "duration": 2206.45,
+      "encodingFormat": "audio/x-wav",
+      "name": "NT1-98007-98007B.wav",
+      "channels": 2,
+      "doi": "10.4225/72/575C8AF3D2DA0",
+      "essenceId": 1010743,
+      "sampleRate": 96000
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-A.tab",
+      "@type": "File",
+      "contentSize": 27810,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:04:57.000Z",
+      "encodingFormat": "text/plain",
+      "name": "NT1-98007-A.tab",
+      "doi": "10.4225/72/575C8B043764B",
+      "essenceId": 1010746
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-A.xml",
+      "@type": "File",
+      "contentSize": 48788,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:05:03.000Z",
+      "encodingFormat": "application/xml",
+      "name": "NT1-98007-A.xml",
+      "doi": "10.4225/72/575C8B09BDC88",
+      "essenceId": 1010747
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-B.tab",
+      "@type": "File",
+      "contentSize": 20239,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:05:08.000Z",
+      "encodingFormat": "text/plain",
+      "name": "NT1-98007-B.tab",
+      "doi": "10.4225/72/575C8B0F4F8F1",
+      "essenceId": 1010748
+    },
+    {
+      "@id": "https://catalog.paradisec.org.au/repository/NT1/98007/NT1-98007-B.xml",
+      "@type": "File",
+      "contentSize": 35289,
+      "dateCreated": "2012-09-27T10:08:01.000Z",
+      "dateModified": "2016-06-11T22:05:14.000Z",
+      "encodingFormat": "application/xml",
+      "name": "NT1-98007-B.xml",
+      "doi": "10.4225/72/575C8B14C6702",
+      "essenceId": 1010749
+    },
+    {
+      "@id": "#license-1",
+      "@type": "CreativeWork",
+      "name": "Open (subject to agreeing to PDSC access conditions)"
+    },
+    {
+      "@id": "http://nla.gov.au/nla.party-593909",
+      "@type": "Organisation",
+      "name": "University of Melbourne"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.2-DRAFT" },
+      "about": {
+        "@id": "https://catalog.paradisec.org.au/collections/98007/items/98007/ro-crate-metadata.json"
+      }
+    },
+    { "@id": "#role-depositor", "@type": "Role", "name": "depositor" },
+    { "@id": "#role-recorder", "@type": "Role", "name": "recorder" },
+    { "@id": "#role-collector", "@type": "Role", "name": "collector" },
+    { "@id": "#role-speaker", "@type": "Role", "name": "speaker" }
+  ]
+}

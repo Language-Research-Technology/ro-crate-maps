@@ -1,0 +1,115 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+      {
+        "@id": "ro-crate-metadata.json",
+        "@type": "CreativeWork",
+        "conformsTo": {
+          "@id": "https://w3id.org/ro/crate/1.1"
+        },
+        "about": {
+          "@id": "./"
+        }
+      },
+      {
+        "@id": "https://github.com/alex-ip/conda",
+        "@type": "SoftwareApplication",
+        "name": "Demonstration Jupyter Notebook with Conda environment.yml for Binder",
+        "url": "https://github.com/alex-ip/conda",
+        "codeRepository": "https://github.com/alex-ip/conda",
+        "isBasedOn": "https://github.com/binder-examples/conda",
+        "softwareVersion": "master",
+        "executionURL": [
+          "https://binderhub.atap-binder.cloud.edu.au",
+          "https://mybinder.org"
+        ],
+        "isAccessibleForFree": true,
+        "description": "A Binder-compatible repo with an environment.yml file. Forked from https://github.com/binder-examples/conda",
+        "citation": null,
+        "license": {
+          "@id": "LICENSE"
+        },
+        "applicationCategory": "Computational science tool",
+        "applicationSubCategory": "Informatics",
+        "operatingSystem": [
+          "Linux",
+          "Windows",
+          "Mac"
+        ],
+        "programmingLanguage": "Python",
+        "softwareHelp": {
+          "@id": "README.md"
+        },
+        "softwareRequirements": {
+          "@id": "environment.yml"
+        }
+      },
+      {
+        "@id": "./",
+        "@type": [
+          "Dataset"
+        ],
+        "datePublished": "2023-01-01T00:00:00.000000",
+        "hasPart": [
+          {
+            "@id": "index.ipynb"
+          },
+          {
+            "@id": "environment.yml"
+          },
+          {
+            "@id": "README.md"
+          },
+          {
+            "@id": "LICENSE"
+          }
+        ]
+      },
+      {
+        "@id": "index.ipynb",
+        "@type": [
+          "File",
+          "SoftwareSourceCode"
+        ],
+        "name": "Demonstration Jupyter notebook",
+        "contentSize": "23314",
+        "description": "Demonstration Jupyter notebook",
+        "encodingFormat": "application/json",
+        "programmingLanguage": {
+          "@id": "https://nbformat.readthedocs.io/en/latest/index.html"
+        }
+      },
+      {
+        "@id": "environment.yml",
+        "@type": "File",
+        "name": "Conda software dependency specifications for Binder",
+        "contentSize": "202",
+        "description": "Conda software dependency specifications for Binder as YAML",
+        "encodingFormat": "application/x-yaml"
+      },
+      {
+        "@id": "README.md",
+        "@type": "File",
+        "name": "ReadMe file",
+        "contentSize": "1133",
+        "description": "ReadMe markdown file",
+        "encodingFormat": "text/markdown"
+      },
+      {
+        "@id": "LICENSE",
+        "@type": "File",
+        "name": "BSD 3-Clause License terms",
+        "contentSize": "1543",
+        "description": "BSD 3-Clause License terms text file",
+        "encodingFormat": "text"
+      },
+      {
+        "@id": "https://nbformat.readthedocs.io/en/latest/index.html",
+        "@type": [
+          "ComputerLanguage",
+          "SoftwareApplication"
+        ],
+        "name": "Jupyter Notebook Python"
+      }
+    ]
+  }

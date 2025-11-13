@@ -1,0 +1,1004 @@
+
+
+<html>
+<head>
+
+
+<script type="application/ld+json"> 
+  {
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://w3id.org/ro/workflow-crate/",
+      "@type": "Dataset",
+      "name": "Workflow Profile",
+      "description": "This is an experimental port of the RO-Crate Workflow Profile to a proposed 'RO-Crate Schema' format.",
+      "author": {
+        "@id": "#author"
+      },
+      "license": "GPL-3.0",
+      "conformsTo": {
+        "@id": "https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/sossplus-profile.md"
+      },
+      "hasResource": [
+        {
+          "@id": "#hasSpecializedSchema"
+        },
+        {
+          "@id": "#hasExampleWorkflow"
+        }
+      ],
+      "hasPart": {
+        "@id": "profile-documentation.md"
+      }
+    },
+    {
+      "@id": "#author",
+      "@type": "Organization",
+      "name": "University of Queensland"
+    },
+    {
+      "@id": "#hasSpecializedSchema",
+      "@type": "ResourceDescriptor",
+      "name": "Specialized Schema Terms",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+      },
+      "hasPart": [
+        {
+          "@id": "#RO-Crate_Metadata_Descriptor"
+        },
+        {
+          "@id": "#Root_Data_Entity"
+        },
+        {
+          "@id": "#Class_MainWorkflow"
+        },
+        {
+          "@id": "#Class_MainWorkflow_Description"
+        },
+        {
+          "@id": "#class_CreativeWork_README"
+        },
+        {
+          "@id": "#class_Dataset_Test_Directory"
+        },
+        {
+          "@id": "#class_Dataset_Examples_Directory"
+        }
+      ]
+    },
+    {
+      "@id": "#hasExampleWorkflow",
+      "@type": "ResourceDescriptor",
+      "name": "Example: Workflow",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/example"
+      },
+      "hasArtifact": {
+        "@id": "#WorkflowExample"
+      }
+    },
+    {
+      "@id": "profile-documentation.md",
+      "@type": "File",
+      "name": "profile-documentation.md",
+      "description": "",
+      "dateModified": "2025-11-06T09:53:25+11:00",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149"
+        },
+        "text/markdown"
+      ]
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor",
+      "@type": "rdfs:Class",
+      "name": "RO-Crate Metadadata Descriptor",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "Description": "An RO-Crate @graph must contain an entity of Type @CreativeWork which is known as the RO-Crate Metadata descriptor.",
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#Root_Data_Entity",
+      "@type": "rdfs:Class",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Dataset"
+      },
+      "description": "The Root Data Entity for an RO-Crate. This is the main entity of the RO-Crate and is the one that is referenced by the RO-Crate Metadata Descriptor.",
+      "name": "Root Data Entity",
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#Class_MainWorkflow",
+      "@type": "rdfs:Class",
+      "prov:specializationOf": [
+        {
+          "@id": "http://schema.org/MediaObject"
+        },
+        {
+          "@id": "http://schema.org/SoftwareSourceCode"
+        },
+        {
+          "@id": "https://bioschemas.org/ComputationalWorkflow"
+        }
+      ],
+      "description": "The Main Workflow is the primary workflow of the RO-Crate. It represents the computational process that is described by the RO-Crate.",
+      "name": "Main Workflow",
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#Class_MainWorkflow_Description",
+      "@type": "rdfs:Class",
+      "prov:specializationOf": [
+        {
+          "@id": "http://schema.org/MediaObject"
+        },
+        {
+          "@id": "http://schema.org/SoftwareSourceCode"
+        },
+        {
+          "@id": "http://schema.org/HowTo"
+        }
+      ],
+      "description": "The _Crate_ COULD contain a data entity of type `[File, SoftwareSourceCode, HowTo]` as the _Main Workflow CWL Description_.",
+      "name": "Main Workflow Description",
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_CreativeWork_README",
+      "@type": "rdfs:Class",
+      "name": "README File",
+      "prov:specializationOf": [
+        {
+          "@id": "http://schema.org/CreativeWork"
+        },
+        {
+          "@id": "http://schema.org/MediaObject"
+        }
+      ],
+      "Description": "The _Crate_ SHOULD contain a File README.md at the root level. If present, it SHOULD have an about property referencing the Root Data Entity and SHOULD have `text/markdown` as its `encodingFormat`.",
+      "sh:minCount": 0,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_Dataset_Test_Directory",
+      "@type": "rdfs:Class",
+      "name": "Test Directory",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Dataset"
+      },
+      "Description": "The Crate SHOULD contain a directory for test files at the root level.",
+      "sh:minCount": 0,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_Dataset_Examples_Directory",
+      "@type": "rdfs:Class",
+      "name": "Examples Directory",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/Dataset"
+      },
+      "Description": "The Crate SHOULD contain a directory for example files at the root level.",
+      "sh:minCount": 0,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#WorkflowExample",
+      "@type": "LearningResource",
+      "name": "An example workflow RO-Crate",
+      "mainEntity": {
+        "@id": "./"
+      },
+      "hasPart": [
+        {
+          "@id": "./"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+        },
+        {
+          "@id": "example_workflow.cwl"
+        },
+        {
+          "@id": "diagram.svg"
+        },
+        {
+          "@id": "README.md"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149",
+      "@type": "DigitalFormat",
+      "name": "Markdown"
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Example Workflow",
+      "conformsTo": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+      },
+      "description": "An example workflow RO-Crate",
+      "license": "Apache-2.0",
+      "datePublished": "2025-10-15",
+      "mainEntity": {
+        "@id": "example_workflow.cwl"
+      },
+      "hasPart": [
+        {
+          "@id": "example_workflow.cwl"
+        },
+        {
+          "@id": "diagram.svg"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "profile-documentation.md"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
+      "@type": [
+        "CreativeWork",
+        "Profile"
+      ],
+      "name": "Workflow RO-Crate Profile (experimental)",
+      "version": "0.4.0",
+      "description": "This is a profile for RO-Crates that are used to describe workflows -- NOTE have moved the conformsTo to the ROOT Data Entity  as per RO-Crate 1.2"
+    },
+    {
+      "@id": "example_workflow.cwl",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+      },
+      "name": "Example Workflow",
+      "image": {
+        "@id": "diagram.svg"
+      }
+    },
+    {
+      "@id": "diagram.svg",
+      "name": "Example Workflow Diagram",
+      "@type": [
+        "File",
+        "ImageObject"
+      ]
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "about": "./",
+      "encodingFormat": "text/markdown"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl",
+      "@type": "ComputerLanguage",
+      "name": "Common Workflow Language",
+      "alternateName": "CWL",
+      "identifier": {
+        "@id": "https://w3id.org/cwl/v1.2/"
+      },
+      "url": {
+        "@id": "https://www.commonwl.org/"
+      }
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor.id",
+      "@type": "rdf:Property",
+      "value": "ro-crate-metadata.json",
+      "description": "The RO-Crate Metadata ",
+      "rdfs:label": "@id",
+      "domainIncludes": {
+        "@id": "#RO-Crate_Metadata_Descriptor"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor.about",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/about"
+      },
+      "description": "This property on the RO-Crate Metadata Descriptor references the Root Data Entity.",
+      "name": "about",
+      "domainIncludes": {
+        "@id": "#RO-Crate_Metadata_Descriptor"
+      },
+      "rangeIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#prop_description_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "description",
+      "name": "description",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/description"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "(In addition to the name) SHOULD further elaborate on the name to provide a summary of the context in which the dataset is important.",
+      "rangeIncludes": {
+        "@id": "Text"
+      },
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#prop_datePublised_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "datePublished",
+      "name": "datePublished",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/datePubished"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "MUST be a string in ISO 8601 date format and SHOULD be specified to at least the precision of a day, MAY be a timestamp down to the millisecond.",
+      "rangeIncludes": {
+        "@id": "schema:Date"
+      },
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#prop_license_Dataset",
+      "@type": "rdf:Property",
+      "rdfs:label": "license",
+      "name": "license",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/license"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "TODO: Deal with the supplied list of licenses (string values) SHOULD link to a Contextual Entity in the RO-Crate Metadata File with a name and description. MAY have a URI (eg for Creative Commons or Open Source licenses). MAY if necessary be a textual description of how the RO-Crate may be used",
+      "rangeIncludes": [
+        {
+          "@id": "#class_CreativeWork"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:Text"
+        }
+      ],
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#Property_mainEntity_Workflow",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/mainEntity"
+      },
+      "description": "Links the Root Data Entity to the Main Workflow. The RO-Crate MUST contain exactly one Main Workflow.",
+      "name": "mainEntity",
+      "rdfs:label": "mainEntity",
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rangeIncludes": {
+        "@id": "#Class_MainWorkflow"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#Property_programmingLanguage_Workflow",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/programmingLanguage"
+      },
+      "description": "The programming language used to implement the Main Workflow. This is a string that should be a valid programming language name.",
+      "name": "programmingLanguage",
+      "rdfs:label": "programmingLanguage",
+      "domainIncludes": {
+        "@id": "#Class_MainWorkflow"
+      },
+      "rangeIncludes": {
+        "@id": "#programmingLanguages"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#programmingLanguages",
+      "@type": "ItemList",
+      "name": "Programming Languages",
+      "description": "A list of programming languages that can be used to implement the Main Workflow",
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#knime"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#nextflow"
+        },
+        {
+          "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+      "@type": "ComputerLanguage",
+      "name": "Galaxy",
+      "identifier": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "url": {
+        "@id": "https://galaxyproject.org/"
+      }
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#knime",
+      "@type": "ComputerLanguage",
+      "name": "KNIME",
+      "identifier": {
+        "@id": "https://www.knime.com/"
+      },
+      "url": {
+        "@id": "https://www.knime.com/"
+      }
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#nextflow",
+      "@type": "ComputerLanguage",
+      "name": "Nextflow",
+      "identifier": {
+        "@id": "https://www.nextflow.io/"
+      },
+      "url": {
+        "@id": "https://www.nextflow.io/"
+      }
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake",
+      "@type": "ComputerLanguage",
+      "name": "Snakemake",
+      "identifier": {
+        "@id": "https://doi.org/10.1093/bioinformatics/bts480"
+      },
+      "url": {
+        "@id": "https://snakemake.readthedocs.io"
+      }
+    },
+    {
+      "@id": "#Property_programmingLanguage_WorkflowDescription",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/programmingLanguage"
+      },
+      "description": "The programming language used to implement the Main Workflow. This is a string that should be a valid programming language name.",
+      "name": "programmingLanguage",
+      "rdfs:label": "programmingLanguage",
+      "domainIncludes": {
+        "@id": "#Class_MainWorkflow_Description"
+      },
+      "rangeIncludes": {
+        "@id": "#programmingLanguageCWLList"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#programmingLanguageCWLList",
+      "@type": "ItemList",
+      "name": "Common Workflow Language",
+      "description": "A list containing only the Common Workflow Language (CWL) as a programming language for the WWorkflow Description.",
+      "itemListElement": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#cwl"
+      }
+    },
+    {
+      "@id": "#prop_conformsTo_Root_Data_Entity",
+      "@type": "rdf:Property",
+      "name": "conformsTo",
+      "rdfs:label": "conformsTo",
+      "description": "The RO-Crate conforms to this profile. This is a link to to the profile entity",
+      "rangeIncludes": {
+        "@id": "#Root_Data_Entity_profile_itemList"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#Root_Data_Entity_profile_itemList",
+      "@type": "ItemList",
+      "name": "Profile Item List",
+      "description": "A list of valid profile values for this RO-Crate Profile",
+      "itemListElement": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+      }
+    },
+    {
+      "@id": "#class_CreativeWork_README.id",
+      "@type": "rdf:Property",
+      "value": "README.md",
+      "description": "The RO-Crate Metadata ",
+      "rdfs:label": "@id",
+      "domainIncludes": {
+        "@id": "#class_CreativeWork_README"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_CreativeWork_README.encodingFormat",
+      "@type": "rdf:Property",
+      "value": "text/markdown",
+      "description": "Readme file must have an encodingFormat of `text/markdown`.",
+      "rdfs:label": "encodingFormat",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/encodingFormat"
+      },
+      "domainIncludes": {
+        "@id": "#class_CreativeWork_README"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_CreativeWork_README.about",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/about"
+      },
+      "description": "The README.md file SHOULD have an about property referencing the Root Data Entity.",
+      "name": "about",
+      "domainIncludes": {
+        "@id": "#class_CreativeWork_README"
+      },
+      "rangeIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_Dataset_Test_Directory.id",
+      "@type": "rdf:Property",
+      "value": "test/",
+      "description": "The RO-Crate Metadata ",
+      "rdfs:label": "@id",
+      "domainIncludes": {
+        "@id": "#class_Dataset_Test_Directory"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#class_Dataset_Examples_Directory.id",
+      "@type": "rdf:Property",
+      "value": "examples/",
+      "description": "The RO-Crate Metadata ",
+      "rdfs:label": "@id",
+      "domainIncludes": {
+        "@id": "#class_Dataset_Examples_Directory"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "http://schema.org/name",
+      "@type": "rdf:Property",
+      "rdfs:label": "name",
+      "name": "name",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/name"
+      },
+      "domainIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "rdfs:comment": "SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates",
+      "rangeIncludes": {
+        "@id": "Text"
+      },
+      "sh:minCount": 1
+    },
+    {
+      "@id": "#Property_MainWorkflow_subjectOf",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/subjectOf"
+      },
+      "description": "Main Workflow to a workflow description. The RO-Crate MUST contain exactly one Main Workflow Description.",
+      "name": "subjectOf",
+      "rdfs:label": "subjectOf",
+      "rangeIncludes": {
+        "@id": "#Class_MainWorkflow_Description"
+      },
+      "domainIncludes": {
+        "@id": "#Class_MainWorkflow"
+      },
+      "sh:minCount": 0,
+      "sh:maxCount": 1
+    },
+    {
+      "@id": "#Class_ImageObject_Diagram",
+      "@type": "rdfs:Class",
+      "name": "Main Workflow Diagram",
+      "prov:specializationOf": [
+        {
+          "@id": "http://schema.org/ImageObject"
+        },
+        {
+          "@id": "http://schema.org/MediaObject"
+        }
+      ],
+      "Description": "The _Crate_ COULD contain a _Main Workflow Diagram_, indicated as a data entity of type `[\"File\", \"ImageObject\"]"
+    },
+    {
+      "@id": "#Property_MainWorkflow_image",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/image"
+      },
+      "description": "If  _Main Workflow Diagram_ is present, the _Main Workflow_ MUST refer to it via `image`.",
+      "name": "image",
+      "rdfs:label": "image",
+      "rangeIncludes": {
+        "@id": "#Class_ImageObject_Diagram"
+      },
+      "domainIncludes": {
+        "@id": "#Class_MainWorkflow"
+      },
+      "sh:minCount": 0,
+      "sh:maxCount": 1
+    }
+  ]
+}
+</script>
+
+    
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
+<script src="https://unpkg.com/ro-crate-html@0.1/dist/ro-crate-dynamic.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset='utf-8'/>
+<style>
+
+table.table {
+  padding-bottom: 300px;
+}
+</style>
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+
+    <ul class="nav navbar-nav" >
+        <li ><a href="#"><span class="glyphicon glyphicon-home dataset_name">&nbsp;Example Workflow</span></a></li>
+    </ul>
+
+  </nav>
+<div class="container">
+<div class="jumbotron">
+<h4 class="citation"></h4>
+<h3 class="item_name">Example Workflow</h3>
+
+
+<a href="./ro-crate-metadata.json">⬇️🏷️ Download all the metadata for <span class='name'>Example Workflow</span> in JSON-LD format</a>
+
+
+<div id="check"></div>
+
+
+</div>
+
+
+
+<div id="summary">
+<div class='all-meta'>
+            <div>
+                <h3> Example Workflow</h3>
+                
+                
+                
+                
+        <div id="./">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>./</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><span name="propName" title="SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates">[?]</span></th>
+            <td style='text-align:left'><span>Example Workflow</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>An example workflow RO-Crate</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">datePublished<span>&nbsp;</span><a href="http://schema.org/datePublished">[?]</a></th>
+            <td style='text-align:left'><span>2025-10-15</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">conformsTo<span>&nbsp;</span><a href="http://purl.org/dc/terms/conformsTo">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/workflowhub/workflow-ro-crate/1.0">Workflow RO-Crate Profile (experimental)</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
+            <td style='text-align:left'><span>Apache-2.0</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">mainEntity<span>&nbsp;</span><a href="http://schema.org/mainEntity">[?]</a></th>
+            <td style='text-align:left'><a href="#example_workflow.cwl">Example Workflow</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#example_workflow.cwl">Example Workflow</a></li>
+                        
+                        <li><a href="#diagram.svg">Example Workflow Diagram</a></li>
+                        
+                        <li><a href="#README.md">README.md</a></li>
+                        
+                        <li><a href="#profile-documentation.md">profile-documentation.md</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">mainEntity<span>&nbsp;</span><a href="http://schema.org/mainEntity">[?]</a></th>
+            <td style='text-align:left'><a href="#%23WorkflowExample">An example workflow RO-Crate</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#%23WorkflowExample">An example workflow RO-Crate</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="https://w3id.org/workflowhub/workflow-ro-crate/1.0">Go to: </a> Workflow RO-Crate Profile (experimental)</h3>
+                
+                
+                
+                
+        <div id="https://w3id.org/workflowhub/workflow-ro-crate/1.0">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://w3id.org/workflowhub/workflow-ro-crate/1.0">https://w3id.org/workflowhub/workflow-ro-crate/1.0</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><span name="propName" title="SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates">[?]</span></th>
+            <td style='text-align:left'><span>Workflow RO-Crate Profile (experimental)</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>CreativeWork</span></li>
+                        
+                        <li><span>Profile</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>This is a profile for RO-Crates that are used to describe workflows -- NOTE have moved the conformsTo to the ROOT Data Entity  as per RO-Crate 1.2</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">version<span>&nbsp;</span><a href="http://schema.org/version">[?]</a></th>
+            <td style='text-align:left'><span>0.4.0</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#%23WorkflowExample">An example workflow RO-Crate</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">conformsTo<span>&nbsp;</span><a href="http://purl.org/dc/terms/conformsTo">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Example Workflow</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">itemListElement<span>&nbsp;</span><a href="http://schema.org/itemListElement">[?]</a></th>
+            <td style='text-align:left'><a href="#%23Root_Data_Entity_profile_itemList">Profile Item List</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="example_workflow.cwl">⬇️ Download: </a> Example Workflow</h3>
+                
+                
+                
+                
+        <div id="example_workflow.cwl">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>example_workflow.cwl</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><span name="propName" title="SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates">[?]</span></th>
+            <td style='text-align:left'><span>Example Workflow</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>SoftwareSourceCode</span></li>
+                        
+                        <li><span>ComputationalWorkflow</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/workflowhub/workflow-ro-crate%23cwl">Common Workflow Language</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">image<span>&nbsp;</span><a href="http://schema.org/image">[?]</a></th>
+            <td style='text-align:left'><a href="#diagram.svg">Example Workflow Diagram</a></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WorkflowExample">An example workflow RO-Crate</a></li>
+                        
+                        <li><a href="#./">Example Workflow</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">mainEntity<span>&nbsp;</span><a href="http://schema.org/mainEntity">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Example Workflow</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="diagram.svg">⬇️ Download: </a> Example Workflow Diagram</h3>
+                
+                
+                
+                
+        <div id="diagram.svg">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>diagram.svg</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><span name="propName" title="SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates">[?]</span></th>
+            <td style='text-align:left'><span>Example Workflow Diagram</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>File</span></li>
+                        
+                        <li><span>ImageObject</span></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WorkflowExample">An example workflow RO-Crate</a></li>
+                        
+                        <li><a href="#./">Example Workflow</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">image<span>&nbsp;</span><a href="http://schema.org/image">[?]</a></th>
+            <td style='text-align:left'><a href="#example_workflow.cwl">Example Workflow</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="README.md">⬇️ Download: </a> README.md</h3>
+                
+                
+                
+                
+        <div id="README.md">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>README.md</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>File</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
+            <td style='text-align:left'><span>text/markdown</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><span>./</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#%23WorkflowExample">An example workflow RO-Crate</a></li>
+                        
+                        <li><a href="#./">Example Workflow</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/>
+            <div>
+                <h3><a href="profile-documentation.md">⬇️ Download: </a> profile-documentation.md</h3>
+                
+                
+                
+                
+        <div id="profile-documentation.md">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>profile-documentation.md</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><span name="propName" title="SHOULD identify the dataset to humans well enough to disambiguate it from other RO-Crates">[?]</span></th>
+            <td style='text-align:left'><span>profile-documentation.md</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>File</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/1149">Markdown</a></li>
+                        
+                        <li><span>text/markdown</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
+            <td style='text-align:left'><span>2025-11-06T09:53:25+11:00</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//w3id.org/ro/workflow-crate/">Workflow Profile</a></li>
+                        
+                        <li><a href="#./">Example Workflow</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+            </div>
+        <hr/><br/><br/></div>
+</div>
+
+
+
+
+
+</body>
+</html>

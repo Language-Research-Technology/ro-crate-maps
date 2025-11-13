@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "name": "Test ONLY: IDN collection profile",
+    "description": "Work in progress collection profile for the Indigenous Data Network (IDN)",
+    "version": 0
+  },
+  "conformsToUri": [],
+  "rootDataset": {
+    "type": [
+      "Dataset",
+      "dcat:Catalog"
+    ]
+  },
+  "classes": {
+    "CreativeWork": {
+      "hasSubclass": [],
+      "inputs": [
+        {
+          "id": "http://schema.org/identifier",
+          "name": "identifier",
+          "help": "The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n        ",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/about",
+          "name": "about",
+          "help": "The subject matter of the content.",
+          "multiple": true,
+          "type": [
+            "dcat:Catalog"
+          ]
+        }
+      ]
+    },
+    "dcat:Catalog": {
+      "hasSubclass": [],
+      "inputs": [
+        {
+          "id": "https://purl.archive.org/languague-data-commons/terms#created",
+          "name": "created",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://schema.org/description",
+          "name": "description",
+          "help": "A description of the item.",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "https://purl.archive.org/languague-data-commons/terms#dc:identifier",
+          "name": "dc:identifier",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "https://purl.archive.org/languague-data-commons/terms#dc:modified",
+          "name": "dc:modified",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "https://purl.archive.org/languague-data-commons/terms#dc:title",
+          "name": "dc:title",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        },
+        {
+          "id": "http://www.w3.org/ns/prov#qualifiedAttribution",
+          "name": "prov:qualifiedAttribution",
+          "help": "...",
+          "multiple": true,
+          "type": [
+            "Text"
+          ]
+        }
+      ]
+    }
+  }
+}

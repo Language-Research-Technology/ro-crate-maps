@@ -113,9 +113,9 @@ The following RO-Crate Machine Actionable Profiles and Schemas are available to 
   Run a validator: 
 
 ## TODO: (these are all partially implemented in the [SoSS+ Branch] 
-- ROC-MAPS for RO-Crate itself
-- ROC-MAPS for ROC-MAPS (extensions to the RO-Crate Profile chapeter)
-- Language Data Commons Schemas and profile 
+- ROC-MASP profile for RO-Crate  (the minimal requirements for the RO-Crate Metadata Descriptor and properties for the RO-Crate Root Data Entity
+- ROC-MASP for ROC-MASPS itself (extensions to the RO-Crate Profile chapter)
+- Language Data Commons Schemas an 
 
 
 [Soss+ Branch]: https://github.com/Language-Research-Technology/ro-crate-schema-tools/tree/sossplus

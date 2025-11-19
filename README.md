@@ -1,8 +1,8 @@
-# RO-Crate Machine Actionable Profiles and Schemas (Proof of concept)
+# RO-Crate Machine Actionable Schemas and Profile (Proof of concept)
 
 ## About this repo
 
-This repository is for the development of RO-Crate Profiles and Schemas which implements the requirements set out in [The Notes] for RO-Crate Schemas and Machine Actionable Profiles.
+This repository is for the development of RO-Crate Schemas and Profiles which implements the requirements set out in [The Notes] for RO-Crate Schemas and Machine Actionable Profiles.
 
 [The Notes]: https://docs.google.com/document/d/17WRkGPIGtoQoSPlTbStBKUyHTzjrOZb620S1gdk0ei8/edit?tab=t.0#heading=h.5vdkev2g6ira 
 
@@ -28,13 +28,13 @@ This repository contains:
 
 ## Help wanted!
 
-We would love to see alternative implementations of this proof of concept code. Particularly other approaches to validation -- can ROC-MAPS schemas and classes be transformed into SCHACL? 
+We would love to see alternative implementations of this proof of concept code. Particularly other approaches to validation -- can ROC-MASP schemas and classes be transformed into SCHACL? 
 
 ## Architecture of the solution
 
-The core of this proposed ROC-MAP solution is to use RO-Crates to package Profiles (or Schemas -- which can be authored in the same way but which would typically be more permissive).
+The core of this proposed ROC-MASP solution is to use RO-Crates to package Profiles (or Schemas -- which can be authored in the same way but which would typically be more permissive).
 
-This ROC-MAP Crate can be used in combination with textual summary of the Profile to create documentation with an automatically generated summary of what should be in conformant crates.
+This ROC-MASP Crate can be used in combination with textual summary of the Profile to create documentation with an automatically generated summary of what should be in conformant crates.
 
 <!--
 @startuml
@@ -77,7 +77,7 @@ npm run validate:workflow:json
 
 NOTE: At the moment these scripts are passing in the profile to validate against. TOTO: In future the code will support fetching or matching local copies of profiles by IRI on a conformsTo property.
 
-Similarly, validators can use a ROC-MAPS crate as a set of rules:
+Similarly, validators can use a ROC-MASP crate as a set of rules:
 
 <!--
 @startuml
@@ -104,7 +104,7 @@ dgs -down-> vr : Generate Report
 ![alt text](image-1.png)
 
 
-## Draft ROC-MAP Implementations
+## Draft ROC-MASP Implementations
 
 The following RO-Crate Machine Actionable Profiles and Schemas are avaialable to try.
 
@@ -113,8 +113,8 @@ The following RO-Crate Machine Actionable Profiles and Schemas are avaialable to
   Run a validator: 
 
 ## TODO: (these are all partially implemented in the [SoSS+ Branch] 
-- ROC-MAPS for RO-Crate itself
-- ROC-MAPS for ROC-MAPS (extensions to the RO-Crate Profile chapeter)
+- ROC-MASP profile for RO-Crate  (the minimal requirements for the RO-Crate Metadata Descriptor and properties for the RO-Crate Root Data Entity
+- ROC-MASP for ROC-MASPS itself (extensions to the RO-Crate Profile chapeter)
 - Language Data Commons Schemas an 
 
 

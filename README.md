@@ -165,7 +165,7 @@ Each build command runs the `generate-soss-docs.js` script with three arguments:
 
 ## Validating RO-Crates from the Command Line
 
-You can validate a target RO-Crate against a profile crate using the command-line tool `validate-crate.js`.
+You can validate a target RO-Crate against a profile crate or schema using the command-line tool `validate-crate.js`.
 
 ### Usage
 

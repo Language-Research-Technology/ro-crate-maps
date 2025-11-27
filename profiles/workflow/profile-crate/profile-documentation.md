@@ -86,8 +86,6 @@ The _Crate_ JSON-LD MUST be valid according to [RO-Crate 1.1](https://w3id.org/r
 
 ### <a id="class-ro-crate-metadadata-descriptor"></a> Class: RO-Crate Metadadata Descriptor
 
-#### IRI: #RO-Crate_Metadata_Descriptor  
-
 
 
 At least 1 instances of this type MUST be present in the crate.
@@ -106,8 +104,6 @@ At least 1 instances of this type MUST be present in the crate.
 
 
 ### <a id="class-root-data-entity"></a> Class: Root Data Entity
-
-#### IRI: #Root_Data_Entity  
 
 The Root Data Entity for an RO-Crate. This is the main entity of the RO-Crate and is the one that is referenced by the RO-Crate Metadata Descriptor.
 
@@ -132,8 +128,6 @@ At least 1 instances of this type MUST be present in the crate.
 
 ### <a id="class-main-workflow"></a> Class: Main Workflow
 
-#### IRI: #Class_MainWorkflow  
-
 The Main Workflow is the primary workflow of the RO-Crate. It represents the computational process that is described by the RO-Crate.
 
 At least 1 instances of this type MUST be present in the crate.
@@ -152,8 +146,6 @@ At least 1 instances of this type MUST be present in the crate.
 
 ### <a id="class-main-workflow-description"></a> Class: Main Workflow Description
 
-#### IRI: #Class_MainWorkflow_Description  
-
 The _Crate_ COULD contain a data entity of type `[File, SoftwareSourceCode, HowTo]` as the _Main Workflow CWL Description_.
 
 Instances of this type MAY be present in the crate.
@@ -171,8 +163,6 @@ Instances of this type MAY be present in the crate.
 
 
 ### <a id="class-readme-file"></a> Class: README File
-
-#### IRI: #class_CreativeWork_README  
 
 
 
@@ -194,8 +184,6 @@ Instances of this type SHOULD be present in the crate.
 
 ### <a id="class-test-directory"></a> Class: Test Directory
 
-#### IRI: #class_Dataset_Test_Directory  
-
 
 
 Instances of this type SHOULD be present in the crate.
@@ -214,8 +202,6 @@ Instances of this type SHOULD be present in the crate.
 
 ### <a id="class-examples-directory"></a> Class: Examples Directory
 
-#### IRI: #class_Dataset_Examples_Directory  
-
 
 
 Instances of this type SHOULD be present in the crate.
@@ -233,8 +219,6 @@ Instances of this type SHOULD be present in the crate.
 
 
 ### <a id="class-main-workflow-diagram"></a> Class: Main Workflow Diagram
-
-#### IRI: #Class_ImageObject_Diagram  
 
 
 
@@ -649,6 +633,10 @@ ID: https://w3id.org/workflowhub/workflow-ro-crate#cwl
 </pre>
 
 
+
+## Provenance
+
+This document was compiled using [generate-soss-docs.js](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/generate-soss-docs.js), based on [profiles/workflow/profile-text.md](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/workflow/profile-text.md) using a SoSS+ Schema defined in [profiles/workflow/profile-crate/ro-crate-metadata.json](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/workflow/profile-crate/ro-crate-metadata.json).
 
 
 <!--

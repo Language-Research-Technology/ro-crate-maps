@@ -88,6 +88,10 @@ ${rules.allItemLists}
 
 ${rules.examples}
 
+## Provenance
+
+${rules.provenance}
+
 
 <!--
 

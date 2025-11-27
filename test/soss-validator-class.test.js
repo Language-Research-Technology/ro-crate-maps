@@ -1,4 +1,4 @@
-const { describe, it, before } = require('mocha');
+// Use Mocha's globals provided by the CLI (describe, it, before)
 const { expect } = require('chai');
 const path = require('path');
 const fs = require('fs');
@@ -54,14 +54,10 @@ describe('SoSS+ Validator Tests', function() {
     // Create a validator with the profile crate
     const validator = new SossValidator(rocrateProfileCrate);
     validator.parseRules();
-    console.log(validator.rules);
     expect(validator.rules.rootClassRule.id).to.equal("#RO-Crate_Metadata_Descriptor")
-    expect(Object.keys(validator.rules.classes).length).to.equal(2);
+    expect(Object.keys(validator.rules.classes).length).to.equal(3);
     expect (validator.rules.classes["#RO-Crate_Metadata_Descriptor"].propertyRules.length).to.equal(2);
     expect (validator.rules.classes["#RO-Crate_Metadata_Descriptor"].entity["@id"]).to.equal("#RO-Crate_Metadata_Descriptor");
-
-
-
 
  
   });

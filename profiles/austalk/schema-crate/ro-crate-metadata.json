@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://w3id.org/ro/crate/1.1/context",
+    "https://w3id.org/ro/crate/1.2/context",
     {
       "@vocab": "http://schema.org/"
     },
@@ -322,7 +322,7 @@
       "@type": "File",
       "name": "schema-documentation.md",
       "description": "",
-      "dateModified": "2025-11-19T14:40:48+11:00",
+      "dateModified": "2025-11-26T16:10:22+11:00",
       "encodingFormat": [
         {
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149"

@@ -1,0 +1,78 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "@vocab": "http://schema.org/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Template RO-Crate Schema",
+      "description": "This is a template for an RO-Crate schema.",
+      "author": {
+        "@id": "#author"
+      },
+      "license": "GPL-3.0",
+      "conformsTo": {
+        "@id": "https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/sossplus-profile.md"
+      },
+      "hasResource": [
+        {
+          "@id": "#hasSpecializedSchema"
+        }
+      ],
+      "hasPart": {
+        "@id": "schema-documentation.md"
+      }
+    },
+    {
+      "@id": "#author",
+      "@type": "Organization",
+      "name": "University of Queensland"
+    },
+    {
+      "@id": "#hasSpecializedSchema",
+      "@type": "ResourceDescriptor",
+      "name": "Specialized Schema Terms",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+      },
+      "hasPart": [
+        {
+          "@id": "template:ClassExample"
+        },
+        {
+          "@id": "template:propertyExample"
+        }
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "template:ClassExample",
+      "@type": "rdfs:Class",
+      "rdfs:label": "ClassExample",
+      "rdfs:comment": "This is an example of a class and its format."
+    },
+    {
+      "@id": "template:propertyExample",
+      "@type": "rdf:Property",
+      "rdfs:label": "propertyExample",
+      "rdfs:comment": "This is an example of a property and its format.",
+      "domainIncludes": {
+        "@id": "template:ClassExample"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    }
+  ]
+}

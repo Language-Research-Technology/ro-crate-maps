@@ -30,7 +30,7 @@ This repository contains:
 - Port of the [Workflow RO-Crate Profile 1.0](https://about.workflowhub.eu/Workflow-RO-Crate/). [Experimental New Version](./profiles/workflow/profile-crate/profile-documentation.md). The markdown document lists its own provenance like so:
     > This document was compiled using [generate-soss-docs.js](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/generate-soss-docs.js), based on [profiles/workflow/profile-text.md](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/workflow/profile-text.md) using a SoSS+ Schema defined in [profiles/workflow/profile-crate/ro-crate-metadata.json](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/workflow/profile-crate/ro-crate-metadata.json).
 
-    See the [Excel verssion](profiles/workflow/profile-crate/ro-crate-metadata.xlsx) of the Profile rules.
+    See the [Excel version](profiles/workflow/profile-crate/ro-crate-metadata.xlsx) of the Profile rules.
 
 - Profile for the small number of metadata requirements for RO-Crate itself: [Experimental new version](./profiles/ro-crate/profile-crate/profile-documentation.md).
     > This document was compiled using [generate-soss-docs.js](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/generate-soss-docs.js), based on [profiles/ro-crate/profile-text.md](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/ro-crate/profile-text.md) using a SoSS+ Schema defined in [profiles/ro-crate/profile-crate/ro-crate-metadata.json](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/ro-crate/profile-crate/ro-crate-metadata.json).

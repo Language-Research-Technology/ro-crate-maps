@@ -137,13 +137,13 @@ This repository includes several profiles and schemas that can be built using np
 
 - **Workflow Profile**: `npm run build:workflow-profile`
 - **RO-Crate Profile**: `npm run build:ro-crate-profile`
+- **LDAC Profile**: `npm run build:ldac-profile`
 
 
 #### COMING SOON!!
-- **LDAC Profile**: `npm run build:ldac-profile`
 - **Generic RepositoryCollection Profile**: `npm run build:generic-profile`
 - **SOA Profile**: `npm run build:soa-profile`
-- **Austalk Schema**: `npm run build:austalk-schema`
+- **AusTalk Schema**: `npm run build:austalk-schema`
 
 ### Examples
 

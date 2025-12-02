@@ -35,6 +35,7 @@ The RO-Crate Context requires `"https://w3id.org/ro/crate/1.2/context"`. The `@v
 
 The graph array contains the rest of the entities in the schema that are added as `{}` objects.
 
+Root Data Entity:
 ```
 "@graph": [
   {

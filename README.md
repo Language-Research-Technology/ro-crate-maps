@@ -2,7 +2,7 @@
 
 ## About this repo
 
-This repository is for the development of RO-Crate Schemas and Profiles which implements the requirements set out in [The Notes] for RO-Crate Schemas and Machine Actionable Profiles.
+This repository is for the development of RO-Crate Schemas and Profiles (RO-Crate-MASP) which implements the requirements set out in [The Notes] for RO-Crate Schemas and Machine Actionable Profiles.
 
 [The Notes]: https://docs.google.com/document/d/17WRkGPIGtoQoSPlTbStBKUyHTzjrOZb620S1gdk0ei8/edit?tab=t.0#heading=h.5vdkev2g6ira 
 
@@ -25,8 +25,17 @@ This repository contains:
         - TODO: Command line validator
     - TODO: Generating Editor (Crate-O) configuration from ROC-MASP crates we have code but it is out of date
 
+### Things to look at
 
-## Help wanted!
+- Port of the [Workflow RO-Crate Profile 1.0](https://about.workflowhub.eu/Workflow-RO-Crate/). [Experimental New Version](./profiles/workflow/profile-crate/profile-documentation.md). The markdown document lists its own provenance like so:
+    > This document was compiled using [generate-soss-docs.js](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/generate-soss-docs.js), based on [profiles/workflow/profile-text.md](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/workflow/profile-text.md) using a SoSS+ Schema defined in [profiles/workflow/profile-crate/ro-crate-metadata.json](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/workflow/profile-crate/ro-crate-metadata.json).
+
+    See the [Excel version](profiles/workflow/profile-crate/ro-crate-metadata.xlsx) of the Profile rules.
+
+- Profile for the small number of metadata requirements for RO-Crate itself: [Experimental new version](./profiles/ro-crate/profile-crate/profile-documentation.md).
+    > This document was compiled using [generate-soss-docs.js](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/generate-soss-docs.js), based on [profiles/ro-crate/profile-text.md](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/ro-crate/profile-text.md) using a SoSS+ Schema defined in [profiles/ro-crate/profile-crate/ro-crate-metadata.json](https://github.com/Language-Research-Technology/ro-crate-schema-tools/blob/main/profiles/ro-crate/profile-crate/ro-crate-metadata.json).
+
+
 
 We would love to see alternative implementations of this proof of concept code. Particularly other approaches to validation -- can ROC-MASP schemas and classes be transformed into SHACL? 
 
@@ -64,9 +73,9 @@ To run this, choose one of the examples from the implementations section below. 
 npm run build:workflow-profile
 ```
 
-Or to validate a workflow crate: 
+Or to validate an example workflow crate: 
 ```
-npm run validate:workflow
+npm run validate:workflow 
 ```
 
 To get the full validation report (which is a work in progress):
@@ -128,6 +137,8 @@ This repository includes several profiles and schemas that can be built using np
 ### Available Build Commands
 
 - **Workflow Profile**: `npm run build:workflow-profile`
+- **RO-Crate Profile**: `npm run build:ro-crate-profile`
+
 
 #### COMING SOON!!
 - **Language Data Commons (LDAC) Profile**: `npm run build:ldac-profile`
@@ -165,7 +176,7 @@ Each build command runs the `generate-soss-docs.js` script with three arguments:
 
 ## Validating RO-Crates from the Command Line
 
-You can validate a target RO-Crate against a profile crate using the command-line tool `validate-crate.js`.
+You can validate a target RO-Crate against a profile crate or schema using the command-line tool `validate-crate.js`.
 
 ### Usage
 
@@ -180,3 +191,9 @@ node validate-crate.js profiles/workflow/examples/minimal-example/ro-crate-metad
 ```
 
 The tool will print validation results to the console and exit with a nonzero code if errors are found.
+
+
+
+## Help wanted!
+
+We would love to see alternative implementations of this proof of concept code. Particularly other approaches to validation -- can ROC-MASP schemas and classes be transformed into SCHACL? 

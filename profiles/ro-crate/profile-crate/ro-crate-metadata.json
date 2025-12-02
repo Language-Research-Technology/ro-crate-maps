@@ -54,6 +54,7 @@
       "@type": "Organization",
       "name": "University of Queensland"
     },
+   
     {
       "@id": "#RO-Crate_Metadata_Descriptor",
       "@type": "rdfs:Class",
@@ -63,35 +64,37 @@
       "sh:minCount": 1,
       "sh:maxCount": 1
     },
-    {
-        "@id": "#RO-Crate_Metadata_Descriptor.id",
-        "@type": "rdf:Property",
-        "value": "ro-crate-metadata.json",
-        "description": "The RO-Crate Metadata ",
-        "rdfs:label": "@id",
-        "domainIncludes": [
-          {
-            "@id": "#RO-Crate_Metadata_Descriptor"
-          }
-        ],
-        "sh:minCount": 1,
-        "sh:maxCount": 1
-   },
-    {
-      "@id": "#RO-Crate_Metadata_Descriptor.about",
-      "@type": "rdf:Property",
-      "prov:specializationOf": { "@id": "http://schema.org/about" },
-      "description": "This property on the RO-Crate Metadata Descriptor references the Root Data Entity. I a SoSS+ profile there may be Schemas present for more than one 'flavour' of Root Data Enitty with different @type arrays or `@conformsTo` references (or other specializations). In this example there is a single reference.",
-      "name": "about (Root Data Entity)",
-      "domainIncludes": [
+
         {
-          "@id": "#RO-Crate_Metadata_Descriptor"
-        }
-      ],
-      "rangeIncludes": { "@id": "#Root_Data_Entity" },
+      "@id": "#RO-Crate_Metadata_Descriptor.id",
+      "@type": "rdf:Property",
+      "value": "ro-crate-metadata.json",
+      "description": "The RO-Crate Metadata ",
+      "rdfs:label": "@id",
+      "domainIncludes": {
+        "@id": "#RO-Crate_Metadata_Descriptor"
+      },
       "sh:minCount": 1,
       "sh:maxCount": 1
     },
+    {
+      "@id": "#RO-Crate_Metadata_Descriptor.about",
+      "@type": "rdf:Property",
+      "prov:specializationOf": {
+        "@id": "http://schema.org/about"
+      },
+      "description": "This property on the RO-Crate Metadata Descriptor references the Root Data Entity.",
+      "name": "about",
+      "domainIncludes": {
+        "@id": "#RO-Crate_Metadata_Descriptor"
+      },
+      "rangeIncludes": {
+        "@id": "#Root_Data_Entity"
+      },
+      "sh:minCount": 1,
+      "sh:maxCount": 1
+    },
+  
     {
       "@id": "#Root_Data_Entity",
       "@type": "rdfs:Class",

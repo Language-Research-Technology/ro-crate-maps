@@ -5,9 +5,6 @@
       "@vocab": "http://schema.org/"
     },
     {
-      "txc": "https://purl.archive.org/language-data-node-tools/terms#"
-    },
-    {
       "@base": null
     }
   ],

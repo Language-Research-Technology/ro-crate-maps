@@ -20,10 +20,10 @@ If this work goes forward then this repository will probably turn into the home 
 This repository contains:
 - Draft Profiles and Schemas, according to the definitions in [The Notes] which are packaged as RO-Crates, with schema rules included as *Contextual Entities*
 - Code (with unit tests) to demonstrate
-    - Generating Profile or Schema documentation from a ROC-MAPS crate.
-    - Validating candidate RO-Crates against a ROC-MAPS crate (initial implementation is as Unit-tests only)
+    - Generating Profile or Schema documentation from a ROC-MASP crate.
+    - Validating candidate RO-Crates against a ROC-MASP crate (initial implementation is as Unit-tests only)
         - TODO: Command line validator
-    - TODO: Generating Editor (Crate-O) configuration from ROC-MAPS crates we have code but it is out of date
+    - TODO: Generating Editor (Crate-O) configuration from ROC-MASP crates we have code but it is out of date
 
 ### Things to look at
 
@@ -37,6 +37,7 @@ This repository contains:
 
 
 
+We would love to see alternative implementations of this proof of concept code. Particularly other approaches to validation -- can ROC-MASP schemas and classes be transformed into SHACL? 
 
 ## Architecture of the solution
 
@@ -120,9 +121,9 @@ The following RO-Crate Machine Actionable Profiles and Schemas are available to 
   Generate docs: `npm run build:workflow-profile`
   Run a validator: 
 
-## TODO: (these are all partially implemented in the [SoSS+ Branch] 
-- ROC-MASP profile for RO-Crate  (the minimal requirements for the RO-Crate Metadata Descriptor and properties for the RO-Crate Root Data Entity
-- ROC-MASP for ROC-MASPS itself (extensions to the RO-Crate Profile chapter)
+## TODO: (these are all partially implemented in the [SoSS+ Branch])
+- ROC-MASP profile for RO-Crate (the minimal requirements for the RO-Crate Metadata Descriptor and properties for the RO-Crate Root Data Entity)
+- ROC-MASP for ROC-MASP itself (extensions to the RO-Crate Profile chapter)
 - Language Data Commons Schemas an 
 
 
@@ -140,10 +141,11 @@ This repository includes several profiles and schemas that can be built using np
 
 
 #### COMING SOON!!
-- **LDAC Profile**: `npm run build:ldac-profile`
-- **Generic RepositoryCollection Profile**: `npm run build:generic-profile`
+- **Language Data Commons (LDAC) Profile**: `npm run build:ldac-profile`
+- **RO-Crate Profile**: `npm run build:ro-crate-profile`
+- **Generic Collection Profile**: `npm run build:generic-profile`
 - **SOA Profile**: `npm run build:soa-profile`
-- **Austalk Schema**: `npm run build:austalk-schema`
+- **AusTalk Schema**: `npm run build:austalk-schema`
 
 ### Examples
 

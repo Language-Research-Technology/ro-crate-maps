@@ -1,0 +1,1356 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "@vocab": "http://schema.org/"
+    },
+    {
+      "@base": null
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      },
+      "identifier": [
+        {
+          "@id": "#:localid:describo:ad55b69a-ca9a-46ab-a581-d57f06979290"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "AusTalk Vocabulary Terms",
+      "description": [
+        "This is a language data ontology based on the AusTalk ontology here: https://github.com/Alveo/bigasc-metadata/edit/master/schema/austalk.owl"
+      ],
+      "mentions": [],
+      "hasResource": [
+        {
+          "@id": "#hasSpecializedSchema"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "schema-documentation.md"
+        }
+      ]
+    },
+    {
+      "@id": "#hasSpecializedSchema",
+      "@type": "ResourceDescriptor",
+      "name": "Specialized Schema Terms",
+      "hasRole": {
+        "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+      },
+      "hasPart": [
+        {
+          "@id": "ausnc:AusNCObject"
+        },
+        {
+          "@id": "austalk:age_from"
+        },
+        {
+          "@id": "austalk:age_to"
+        },
+        {
+          "@id": "austalk:audiorating"
+        },
+        {
+          "@id": "austalk:basename"
+        },
+        {
+          "@id": "austalk:birthPlace"
+        },
+        {
+          "@id": "austalk:cameraSN0"
+        },
+        {
+          "@id": "austalk:cameraSN1"
+        },
+        {
+          "@id": "austalk:channel"
+        },
+        {
+          "@id": "austalk:checksum"
+        },
+        {
+          "@id": "austalk:city"
+        },
+        {
+          "@id": "austalk:comment"
+        },
+        {
+          "@id": "austalk:consent"
+        },
+        {
+          "@id": "austalk:country"
+        },
+        {
+          "@id": "austalk:cultural_heritage"
+        },
+        {
+          "@id": "austalk:education_level"
+        },
+        {
+          "@id": "austalk:father_accent"
+        },
+        {
+          "@id": "austalk:father_cultural_heritage"
+        },
+        {
+          "@id": "austalk:father_education_level"
+        },
+        {
+          "@id": "austalk:father_first_language"
+        },
+        {
+          "@id": "austalk:father_pob_country"
+        },
+        {
+          "@id": "austalk:father_pob_state"
+        },
+        {
+          "@id": "austalk:father_pob_town"
+        },
+        {
+          "@id": "austalk:father_professional_category"
+        },
+        {
+          "@id": "austalk:first_language"
+        },
+        {
+          "@id": "austalk:frequency"
+        },
+        {
+          "@id": "austalk:has_dentures"
+        },
+        {
+          "@id": "austalk:has_health_problems"
+        },
+        {
+          "@id": "austalk:has_hearing_problems"
+        },
+        {
+          "@id": "austalk:has_hobbies"
+        },
+        {
+          "@id": "austalk:has_piercings"
+        },
+        {
+          "@id": "austalk:has_reading_problems"
+        },
+        {
+          "@id": "austalk:has_speech_problems"
+        },
+        {
+          "@id": "austalk:has_vocal_training"
+        },
+        {
+          "@id": "austalk:health_problems_details"
+        },
+        {
+          "@id": "austalk:hearing_problems_details"
+        },
+        {
+          "@id": "austalk:hobbies_details"
+        },
+        {
+          "@id": "austalk:id"
+        },
+        {
+          "@id": "austalk:information_follower"
+        },
+        {
+          "@id": "austalk:information_giver"
+        },
+        {
+          "@id": "austalk:institution"
+        },
+        {
+          "@id": "austalk:is_left_handed"
+        },
+        {
+          "@id": "austalk:is_smoker"
+        },
+        {
+          "@id": "austalk:is_student"
+        },
+        {
+          "@id": "austalk:language_usage"
+        },
+        {
+          "@id": "austalk:less_than_a_year"
+        },
+        {
+          "@id": "austalk:map"
+        },
+        {
+          "@id": "austalk:maptaskcomment"
+        },
+        {
+          "@id": "austalk:mother_accent"
+        },
+        {
+          "@id": "austalk:mother_cultural_heritage"
+        },
+        {
+          "@id": "austalk:mother_education_level"
+        },
+        {
+          "@id": "austalk:mother_first_language"
+        },
+        {
+          "@id": "austalk:mother_pob_country"
+        },
+        {
+          "@id": "austalk:mother_pob_state"
+        },
+        {
+          "@id": "austalk:mother_pob_town"
+        },
+        {
+          "@id": "austalk:mother_professional_category"
+        },
+        {
+          "@id": "austalk:name"
+        },
+        {
+          "@id": "austalk:other_languages"
+        },
+        {
+          "@id": "austalk:piercings_details"
+        },
+        {
+          "@id": "austalk:pob_country"
+        },
+        {
+          "@id": "austalk:pob_state"
+        },
+        {
+          "@id": "austalk:pob_town"
+        },
+        {
+          "@id": "austalk:professional_category"
+        },
+        {
+          "@id": "austalk:professional_occupation"
+        },
+        {
+          "@id": "austalk:professional_qualification"
+        },
+        {
+          "@id": "austalk:prompt"
+        },
+        {
+          "@id": "austalk:prototype"
+        },
+        {
+          "@id": "austalk:reading_problems_details"
+        },
+        {
+          "@id": "austalk:RecordedComponent"
+        },
+        {
+          "@id": "austalk:recording_site"
+        },
+        {
+          "@id": "austalk:RecordingSite"
+        },
+        {
+          "@id": "austalk:research_assistant"
+        },
+        {
+          "@id": "austalk:residential_history"
+        },
+        {
+          "@id": "austalk:ses"
+        },
+        {
+          "@id": "austalk:session"
+        },
+        {
+          "@id": "austalk:shortname"
+        },
+        {
+          "@id": "austalk:situation"
+        },
+        {
+          "@id": "austalk:speech_problems_details"
+        },
+        {
+          "@id": "austalk:state"
+        },
+        {
+          "@id": "austalk:student_aspiration"
+        },
+        {
+          "@id": "austalk:student_course"
+        },
+        {
+          "@id": "austalk:student_enrollment"
+        },
+        {
+          "@id": "austalk:town"
+        },
+        {
+          "@id": "austalk:type"
+        },
+        {
+          "@id": "austalk:version"
+        },
+        {
+          "@id": "austalk:videorating"
+        },
+        {
+          "@id": "austalk:vocal_training_details"
+        }
+      ]
+    },
+    {
+      "@id": "schema-documentation.md",
+      "@type": "File",
+      "name": "schema-documentation.md",
+      "description": "",
+      "dateModified": "2025-11-26T16:10:22+11:00",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149"
+        },
+        "text/markdown"
+      ]
+    },
+    {
+      "@id": "ausnc:AusNCObject",
+      "@type": "rdfs:Class",
+      "rdfs:label": "AusNCObject",
+      "rdfs:comment": "An individual item in the corpus - one recording of a prompt/interview/map task."
+    },
+    {
+      "@id": "austalk:age_from",
+      "@type": "rdf:Property",
+      "rdfs:label": "age from",
+      "rdfs:comment": "The age from which this person has resided in the specified town.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:age_to",
+      "@type": "rdf:Property",
+      "rdfs:label": "age to",
+      "rdfs:comment": "The age to which this person has resided in the specified town. If still residing there, use null.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:audiorating",
+      "@type": "rdf:Property",
+      "rdfs:label": "audio rating",
+      "rdfs:comment": "A rating of audio quality A-D: A (A-OK), B (OK, but imperfect), C (bad, not acceptable), D (deficient or missing).",
+      "domainIncludes": {
+        "@id": "austalk:RecordedComponent"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:basename",
+      "@type": "rdf:Property",
+      "rdfs:label": "basename",
+      "rdfs:comment": " The base name of a media file without path, comprised of the speaker, session, component and prompt numbers.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:birthPlace",
+      "@type": "rdf:Property",
+      "rdfs:label": "birthPlace",
+      "rdfs:comment": "The place of birth of this person (geolocated).",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "geo:Feature"
+      }
+    },
+    {
+      "@id": "austalk:cameraSN0",
+      "@type": "rdf:Property",
+      "rdfs:label": "cameraSN0",
+      "rdfs:comment": "The serial number of camera 0.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:cameraSN1",
+      "@type": "rdf:Property",
+      "rdfs:label": "cameraSN1",
+      "rdfs:comment": "The serial number of camera 1.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:channel",
+      "@type": "rdf:Property",
+      "rdfs:label": "channel",
+      "rdfs:comment": "The channel name of the media file.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:checksum",
+      "@type": "rdf:Property",
+      "rdfs:label": "checksum",
+      "rdfs:comment": "The checksum of the media file for integrity verification.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:city",
+      "@type": "rdf:Property",
+      "rdfs:label": "city",
+      "rdfs:comment": "The city of the recording site.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:comment",
+      "@type": "rdf:Property",
+      "rdfs:label": "comment",
+      "rdfs:comment": "A comment on the recording quality.",
+      "domainIncludes": {
+        "@id": "austalk:RecordedComponent"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:consent",
+      "@type": "rdf:Property",
+      "rdfs:label": "consent",
+      "rdfs:comment": "Boolean value true if this person has signed the consent form.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:country",
+      "@type": "rdf:Property",
+      "rdfs:label": "country",
+      "rdfs:comment": "The country in which this person has residential history.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:cultural_heritage",
+      "@type": "rdf:Property",
+      "rdfs:label": "cultural heritage",
+      "rdfs:comment": "The cultural heritage of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:education_level",
+      "@type": "rdf:Property",
+      "rdfs:label": "education level",
+      "rdfs:comment": "The highest level of education of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_accent",
+      "@type": "rdf:Property",
+      "rdfs:label": "father accent",
+      "rdfs:comment": "The accent of the father of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_cultural_heritage",
+      "@type": "rdf:Property",
+      "rdfs:label": "father cultural heritage",
+      "rdfs:comment": "The cultural heritage of the father of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_education_level",
+      "@type": "rdf:Property",
+      "rdfs:label": "father education level",
+      "rdfs:comment": "The highest level of education of the father of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_first_language",
+      "@type": "rdf:Property",
+      "rdfs:label": "father first language",
+      "rdfs:comment": "The first language of the father of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_pob_country",
+      "@type": "rdf:Property",
+      "rdfs:label": "father pob country",
+      "rdfs:comment": "The country where the father of this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_pob_state",
+      "@type": "rdf:Property",
+      "rdfs:label": "state of birth of Father",
+      "rdfs:comment": "The state where the father of this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_pob_town",
+      "@type": "rdf:Property",
+      "rdfs:label": "father pob town",
+      "rdfs:comment": "The town where the father of this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:father_professional_category",
+      "@type": "rdf:Property",
+      "rdfs:label": "father professional category",
+      "rdfs:comment": "The professional category of the father of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:first_language",
+      "@type": "rdf:Property",
+      "rdfs:label": "first language",
+      "rdfs:comment": "The first language of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:frequency",
+      "@type": "rdf:Property",
+      "rdfs:label": "frequency",
+      "rdfs:comment": "The frequency of use of a language by this person, on a scale of 1-100.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:has_dentures",
+      "@type": "rdf:Property",
+      "rdfs:label": "has dentures",
+      "rdfs:comment": "Boolean value true if this person has dentures.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:has_health_problems",
+      "@type": "rdf:Property",
+      "rdfs:label": "has health problems",
+      "rdfs:comment": "Boolean value true if this person has health problems which might affect his/her voice.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:has_hearing_problems",
+      "@type": "rdf:Property",
+      "rdfs:label": "has hearing problems",
+      "rdfs:comment": "Boolean value true if this person has hearing problems.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:has_hobbies",
+      "@type": "rdf:Property",
+      "rdfs:label": "has hobbies",
+      "rdfs:comment": "Boolean value true if this person has hobbies.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:has_piercings",
+      "@type": "rdf:Property",
+      "rdfs:label": "has piercings",
+      "rdfs:comment": "Boolean value true if this person has facial piercings.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:has_reading_problems",
+      "@type": "rdf:Property",
+      "rdfs:label": "has reading problems",
+      "rdfs:comment": "Boolean value true if this person has reading problems.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:has_speech_problems",
+      "@type": "rdf:Property",
+      "rdfs:label": "has speech problems",
+      "rdfs:comment": "Boolean value true if this person has speech problems.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:has_vocal_training",
+      "@type": "rdf:Property",
+      "rdfs:label": "has vocal training",
+      "rdfs:comment": "Boolean value true if this person has vocal training.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:health_problems_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "health problems details",
+      "rdfs:comment": "Details of the health problems of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:hearing_problems_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "hearing problems details",
+      "rdfs:comment": "Details of the hearing problems of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:hobbies_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "hobbies details",
+      "rdfs:comment": "Details of the hobbies of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:id",
+      "@type": "rdf:Property",
+      "rdfs:label": "id",
+      "rdfs:comment": "The numerical identifier for a session/component/item.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:information_follower",
+      "@type": "rdf:Property",
+      "rdfs:label": "information follower",
+      "rdfs:comment": "The participant whose role was information follower in the map task.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:information_giver",
+      "@type": "rdf:Property",
+      "rdfs:label": "information giver",
+      "rdfs:comment": "The participant whose role was information giver in the map task.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:institution",
+      "@type": "rdf:Property",
+      "rdfs:label": "institution",
+      "rdfs:comment": "The institution associated with the recording site.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:is_left_handed",
+      "@type": "rdf:Property",
+      "rdfs:label": "is left handed",
+      "rdfs:comment": "Boolean value true if this person is left handed.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:is_smoker",
+      "@type": "rdf:Property",
+      "rdfs:label": "is smoker",
+      "rdfs:comment": "Boolean value true if this person is a smoker.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:is_student",
+      "@type": "rdf:Property",
+      "rdfs:label": "is student",
+      "rdfs:comment": "Boolean value true if this person is a student.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    },
+    {
+      "@id": "austalk:language_usage",
+      "@type": "rdf:Property",
+      "rdfs:label": "language usage",
+      "rdfs:comment": "The languages used by this person and the contexts in which they are used.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:less_than_a_year",
+      "@type": "rdf:Property",
+      "rdfs:label": "less than a year",
+      "rdfs:comment": "Boolean value true if this person has resided less than a year in the specified town.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:map",
+      "@type": "rdf:Property",
+      "rdfs:label": "map",
+      "rdfs:comment": "The map being used in the map task.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:maptaskcomment",
+      "@type": "rdf:Property",
+      "rdfs:label": "maptaskcomment",
+      "rdfs:comment": "A comment on the map task.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_accent",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother accent",
+      "rdfs:comment": "The accent of the mother of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_cultural_heritage",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother cultural heritage",
+      "rdfs:comment": "The cultural heritage of the mother of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_education_level",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother education level",
+      "rdfs:comment": "The highest level of education of the mother of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_first_language",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother first language",
+      "rdfs:comment": "The first language of the mother of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_pob_country",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother's country of birth",
+      "rdfs:comment": "The country where the mother of this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_pob_state",
+      "@type": "rdf:Property",
+      "rdfs:label": "mothers birth state",
+      "rdfs:comment": "The state where the mother of this person was born.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_pob_town",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother's birth town",
+      "rdfs:comment": "The town where the mother of this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:mother_professional_category",
+      "@type": "rdf:Property",
+      "rdfs:label": "mother professional category",
+      "rdfs:comment": "The professional category of the mother of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:name",
+      "@type": "rdf:Property",
+      "rdfs:label": "name",
+      "rdfs:comment": "The name of the thing.",
+      "domainIncludes": {
+        "@id": "owl:Class"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:other_languages",
+      "@type": "rdf:Property",
+      "rdfs:label": "other languages",
+      "rdfs:comment": "Other languages spoken or understood by this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:piercings_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "piercings details",
+      "rdfs:comment": "Details of the facial piercings of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:pob_country",
+      "@type": "rdf:Property",
+      "rdfs:label": "country of birth",
+      "rdfs:comment": "The country where this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:pob_state",
+      "@type": "rdf:Property",
+      "rdfs:label": "pob state",
+      "rdfs:comment": "The state where this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:pob_town",
+      "@type": "rdf:Property",
+      "rdfs:label": "pob town",
+      "rdfs:comment": "The town where this person was born.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:professional_category",
+      "@type": "rdf:Property",
+      "rdfs:label": "professional category",
+      "rdfs:comment": "The professional category of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:professional_occupation",
+      "@type": "rdf:Property",
+      "rdfs:label": "professional occupation",
+      "rdfs:comment": "The professional occupation of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:professional_qualification",
+      "@type": "rdf:Property",
+      "rdfs:label": "professional qualification",
+      "rdfs:comment": "The professional qualification of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:prompt",
+      "@type": "rdf:Property",
+      "rdfs:label": "prompt",
+      "rdfs:comment": "The prompt text shown when recording an item.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:prototype",
+      "@type": "rdf:Property",
+      "rdfs:label": "prototype",
+      "rdfs:comment": "A link to the prototype session/component/item for this thing."
+    },
+    {
+      "@id": "austalk:reading_problems_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "reading problems details",
+      "rdfs:comment": "Details of the reading problems of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:RecordedComponent",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Recorded Component",
+      "rdfs:comment": "An instance of a component for one participant."
+    },
+    {
+      "@id": "austalk:recording_site",
+      "@type": "rdf:Property",
+      "rdfs:label": "recording site",
+      "rdfs:comment": "A URI of the recording site where the recording was made.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "austalk:RecordingSite"
+      }
+    },
+    {
+      "@id": "austalk:RecordingSite",
+      "@type": "rdfs:Class",
+      "rdfs:label": "RecordingSite",
+      "rdfs:comment": "A physical location where recordings were made."
+    },
+    {
+      "@id": "austalk:research_assistant",
+      "@type": "rdf:Property",
+      "rdfs:label": "research assistant",
+      "rdfs:comment": "The research assistant who ran the recording session.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "austalk:residential_history",
+      "@type": "rdf:Property",
+      "rdfs:label": "residential history",
+      "rdfs:comment": "The residential history of this person, including the person's age and duration at each location.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:ses",
+      "@type": "rdf:Property",
+      "rdfs:label": "ses",
+      "rdfs:comment": "The socio-economic status (SES) of this person (e.g. professional or non-professional).",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:session",
+      "@type": "rdf:Property",
+      "rdfs:label": "session",
+      "rdfs:comment": "The session of each component.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:shortname",
+      "@type": "rdf:Property",
+      "rdfs:label": "shortname",
+      "rdfs:comment": "The short name for a component.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:situation",
+      "@type": "rdf:Property",
+      "rdfs:label": "situation",
+      "rdfs:comment": "The situations in which a language is used by this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:speech_problems_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "speech problems details",
+      "rdfs:comment": "Details of the speech problems of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:state",
+      "@type": "rdf:Property",
+      "rdfs:label": "state",
+      "rdfs:comment": "The state in which this person has residential history.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:student_aspiration",
+      "@type": "rdf:Property",
+      "rdfs:label": "student aspiration",
+      "rdfs:comment": "The career aspirations of this person who is a student.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:student_course",
+      "@type": "rdf:Property",
+      "rdfs:label": "student course",
+      "rdfs:comment": "The course that this person who is a student is enrolled in.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:student_enrollment",
+      "@type": "rdf:Property",
+      "rdfs:label": "student enrollment",
+      "rdfs:comment": "The enrollment status of this person who is a student (e.g. fulltime, parttime, null).",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:town",
+      "@type": "rdf:Property",
+      "rdfs:label": "town",
+      "rdfs:comment": "The town in which this person has residential history.",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:type",
+      "@type": "rdf:Property",
+      "rdfs:label": "type",
+      "rdfs:comment": "The type of the media file (e.g. audio or video).",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:version",
+      "@type": "rdf:Property",
+      "rdfs:label": "version",
+      "rdfs:comment": "The version number differentiating between sets of recordings for an item (default 1, incremented for additional recordings).",
+      "domainIncludes": {
+        "@id": "ausnc:AusNCObject"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:videorating",
+      "@type": "rdf:Property",
+      "rdfs:label": "video rating",
+      "rdfs:comment": "A rating of video quality A-D: A (A-OK), B (OK, but imperfect), C (bad, not acceptable), D (deficient or missing).",
+      "domainIncludes": {
+        "@id": "austalk:RecordedComponent"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "austalk:vocal_training_details",
+      "@type": "rdf:Property",
+      "rdfs:label": "vocal training details",
+      "rdfs:comment": "Details of the vocal training of this person.",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      },
+      "rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/1149",
+      "@type": "DigitalFormat",
+      "name": "Markdown"
+    }
+  ]
+}
